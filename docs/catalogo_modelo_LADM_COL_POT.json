@@ -1,0 +1,6060 @@
+{
+  "resumen": {
+    "modelos": [
+      {
+        "modelo": "ISO19107_PLANAS_V3_1",
+        "version": "2016-03-07",
+        "archivo": "ISO19107_PLANAS_V3_1.ili",
+        "sha256": "6dc4be70acf31a1f19b5b12b2b84a712a0fffae8da710606282ac3dd20e925d2"
+      },
+      {
+        "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+        "version": "2.0.0",
+        "archivo": "LADM_COL_v_2_0_0_Ext_POT.ili",
+        "sha256": "6b0a95671b1516af0a8fbb7bc61c271a3a6cfee4417042079fd6de12c8eed293"
+      },
+      {
+        "modelo": "LADM_COL_v_4_0_1_Nucleo",
+        "version": "V1.2.0",
+        "archivo": "LADM_COL_v_4_0_1_Nucleo.ili",
+        "sha256": "41676304377434b0640d1d0b0870d3152c946c7181232a0e19e09f1742608e68"
+      }
+    ],
+    "n_dominios": 30,
+    "n_clases": 61,
+    "tablas_intermedias": [
+      "area_condicion_amenaza",
+      "area_condicion_riesgo",
+      "areas_actividad",
+      "centro_poblado_rural",
+      "clasificacion_suelo",
+      "sistemas_generales_poligono",
+      "sistemas_generales_linea",
+      "sistemas_generales_punto",
+      "suelo_proteccion_urbano",
+      "tratamiento_urbanistico",
+      "zonificacion_amenaza",
+      "zonificacion_suelo_rural",
+      "municipio"
+    ],
+    "srid": 9377,
+    "reglas_dominio": 98
+  },
+  "dominios": {
+    "POT_AreaActividadTipo": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Residencial",
+          "dispName": "Residencial"
+        },
+        {
+          "ilicode": "Comercial",
+          "dispName": "Comercial"
+        },
+        {
+          "ilicode": "Servicios",
+          "dispName": "Servicios"
+        },
+        {
+          "ilicode": "Industrial",
+          "dispName": "Industrial"
+        },
+        {
+          "ilicode": "Institucional",
+          "dispName": "Institucional"
+        },
+        {
+          "ilicode": "Dotacional",
+          "dispName": "Dotacional"
+        },
+        {
+          "ilicode": "Mixto",
+          "dispName": "Mixto"
+        },
+        {
+          "ilicode": "Otro",
+          "dispName": "Otro"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "POT_CategoriaAmenazaTipo": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Alta",
+          "dispName": "Categoría alta"
+        },
+        {
+          "ilicode": "Media",
+          "dispName": "Categoría media"
+        },
+        {
+          "ilicode": "Baja",
+          "dispName": "Categoría baja"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "POT_CategoriaRuralTipo": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Suelo_Rural_Productivo.Agropecuario",
+          "dispName": "(Suelo rural productivo) Agropecuario"
+        },
+        {
+          "ilicode": "Suelo_Rural_Productivo.Forestal",
+          "dispName": "(Suelo rural productivo) Forestal"
+        },
+        {
+          "ilicode": "Suelo_Rural_Productivo.Mineria_Hidrocarburos",
+          "dispName": "(Suelo rural productivo) Minería e hidrocarburos"
+        },
+        {
+          "ilicode": "Desarrollo_Restringido.Suburbano",
+          "dispName": "(Desarrollo restringido) Suburbano"
+        },
+        {
+          "ilicode": "Desarrollo_Restringido.Corredor_Vial_Suburbano",
+          "dispName": "(Desarrollo restringido) Corredor vial suburbano"
+        },
+        {
+          "ilicode": "Desarrollo_Restringido.Centro_Poblado_Rural",
+          "dispName": "(Desarrollo restringido) Centro poblado en la zona rural"
+        },
+        {
+          "ilicode": "Desarrollo_Restringido.Vivienda_Campestre",
+          "dispName": "(Desarrollo restringido) Vivienda campestre"
+        },
+        {
+          "ilicode": "Desarrollo_Restringido.Equipamento",
+          "dispName": "(Desarrollo restringido) Equipamiento"
+        },
+        {
+          "ilicode": "Proteccion_Suelo_Rural.Conservacion_Proteccion_Ambiental.Areas_SINAP",
+          "dispName": "(Protección suelo rural-Conservación y protección ambiental) Áreas SINAP"
+        },
+        {
+          "ilicode": "Proteccion_Suelo_Rural.Conservacion_Proteccion_Ambiental.Areas_Reserva_Forestal",
+          "dispName": "(Protección suelo rural-Conservación y protección ambiental) Áreas de reserva forestal"
+        },
+        {
+          "ilicode": "Proteccion_Suelo_Rural.Conservacion_Proteccion_Ambiental.Areas_Manejo_Especial",
+          "dispName": "(Protección suelo rural-Conservación y protección ambiental) Áreas de manejo especial"
+        },
+        {
+          "ilicode": "Proteccion_Suelo_Rural.Conservacion_Proteccion_Ambiental.Areas_Importancia_Ecosistemica",
+          "dispName": "(Protección suelo rural-Conservación y protección ambiental) Áreas de especial importancia ecosistémica"
+        },
+        {
+          "ilicode": "Proteccion_Suelo_Rural.Produccion_Agropecuaria_Explotacion_RRNN",
+          "dispName": "(Protección Suelo Rural) Producción agrícola, ganadera y de explotación de recursos naturales"
+        },
+        {
+          "ilicode": "Proteccion_Suelo_Rural.Sistema_Servicios_Publicos",
+          "dispName": "(Protección suelo rural) Sistema de servicios públicos domiciliarios"
+        },
+        {
+          "ilicode": "Proteccion_Suelo_Rural.Amenaza_Y_Riesgo_No_Mitigable",
+          "dispName": "(Protección suelo rural) Amenaza y riesgo no mitigable"
+        },
+        {
+          "ilicode": "Proteccion_Suelo_Rural.Patrimonio_Cultural",
+          "dispName": "(Protección suelo rural) Patrimonio cultural"
+        }
+      ],
+      "nodos_no_hoja": [
+        "Suelo_Rural_Productivo",
+        "Desarrollo_Restringido",
+        "Proteccion_Suelo_Rural",
+        "Proteccion_Suelo_Rural.Conservacion_Proteccion_Ambiental"
+      ]
+    },
+    "POT_ClasificacionSueloTipo": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Urbano",
+          "dispName": "Urbano"
+        },
+        {
+          "ilicode": "Rural",
+          "dispName": "Rural"
+        },
+        {
+          "ilicode": "Expansion_Urbana",
+          "dispName": "Expansión urbana"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "POT_FenomenoAmenazaTipo": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Movimientos_En_Masa",
+          "dispName": "Movimientos en masa"
+        },
+        {
+          "ilicode": "Avenida_Torrencial",
+          "dispName": "Avenida torrencial"
+        },
+        {
+          "ilicode": "Inundacion",
+          "dispName": "Inundación"
+        },
+        {
+          "ilicode": "Incendios_Forestales",
+          "dispName": "Incendios forestales"
+        },
+        {
+          "ilicode": "Tsunami",
+          "dispName": "Tsunami"
+        },
+        {
+          "ilicode": "Volcanico",
+          "dispName": "Volcánico"
+        },
+        {
+          "ilicode": "Huracanes",
+          "dispName": "Huracanes"
+        },
+        {
+          "ilicode": "Sismica",
+          "dispName": "Sísmica"
+        },
+        {
+          "ilicode": "Erosion_Costera",
+          "dispName": "Erosión costera"
+        },
+        {
+          "ilicode": "Vendavales",
+          "dispName": "Vendavales"
+        },
+        {
+          "ilicode": "Tecnologico",
+          "dispName": "Tecnológico"
+        },
+        {
+          "ilicode": "Otro",
+          "dispName": "Otro"
+        },
+        {
+          "ilicode": "Sin_Determinar",
+          "dispName": "Sin determinar"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "POT_FuenteAdministrativaTipo": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_FuenteAdministrativaTipo",
+      "valores": [
+        {
+          "ilicode": "Documento_Publico.Acuerdo",
+          "dispName": "Acuerdo"
+        },
+        {
+          "ilicode": "Documento_Publico.Decreto",
+          "dispName": "Decreto"
+        },
+        {
+          "ilicode": "Documento_Publico.Concertacion_Junta_Metropolitana",
+          "dispName": "Concertacion_Junta_Metropolitana"
+        },
+        {
+          "ilicode": "Documento_Publico.Acta_Concertacion",
+          "dispName": "Acta de concertación"
+        },
+        {
+          "ilicode": "Documento_Privado",
+          "dispName": "Documento privado"
+        }
+      ],
+      "nodos_no_hoja": [
+        "Documento_Publico"
+      ]
+    },
+    "POT_MedidaIntervencionTipo": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Estudios_Detallados",
+          "dispName": "Estudios detallados"
+        },
+        {
+          "ilicode": "Restriccion_O_Condicionamiento_Uso_Del_Suelo",
+          "dispName": "Restricción o condicionamiento del uso del suelo"
+        },
+        {
+          "ilicode": "Monitoreo_Del_Riesgo",
+          "dispName": "Monitoreo del riesgo"
+        },
+        {
+          "ilicode": "Sistema_De_Alerta_Temprana",
+          "dispName": "Sistemas de alerta temprana"
+        },
+        {
+          "ilicode": "Preparacion_Y_Respuesta",
+          "dispName": "Preparación y respuesta"
+        },
+        {
+          "ilicode": "Estudios_Disenios_Y_Obras",
+          "dispName": "Estudios, diseños y obras"
+        },
+        {
+          "ilicode": "Fortalecimiento_Institucional",
+          "dispName": "Fortalecimiento institucional"
+        },
+        {
+          "ilicode": "Apropiacion_Comunitaria_De_La_Gestion_Del_Riesgo_De_Desastres",
+          "dispName": "Apropiación comunitaria de la gestión del riesgo de desastres"
+        },
+        {
+          "ilicode": "Otro",
+          "dispName": "Otro"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "POT_PlanOrdenamientoTerritorialTipo": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "POT",
+          "dispName": "Plan de ordenamiento territorial"
+        },
+        {
+          "ilicode": "PBOT",
+          "dispName": "Plan básico de ordenamiento territorial"
+        },
+        {
+          "ilicode": "EOT",
+          "dispName": "Esquema de ordenamiento territorial"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "POT_PriorizacionTipo": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Corto_Plazo",
+          "dispName": "Corto plazo"
+        },
+        {
+          "ilicode": "Mediano_Plazo",
+          "dispName": "Mediano plazo"
+        },
+        {
+          "ilicode": "Largo_Plazo",
+          "dispName": "Largo plazo"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "POT_RevisionTipo": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Revision_Vencimiento_Largo_Plazo",
+          "dispName": "Revisión por vencimiento de largo plazo"
+        },
+        {
+          "ilicode": "Revision_Vencimiento_Mediano_Plazo",
+          "dispName": "Revisión por vencimiento de mediano plazo"
+        },
+        {
+          "ilicode": "Revision_Vencimiento_Corto_Plazo",
+          "dispName": "Revisión por vencimiento de corto plazo"
+        },
+        {
+          "ilicode": "Modificacion_Excepcional_Norma_Urbanistica",
+          "dispName": "Modificación excepcional de norma urbanística"
+        },
+        {
+          "ilicode": "Revision_Excepcional_Interes_Publico",
+          "dispName": "Revisión por excepcional interés público"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "POT_SistemasGeneralesEstadoTipo": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Existente",
+          "dispName": "Estado existente"
+        },
+        {
+          "ilicode": "Proyectado",
+          "dispName": "Estado proyectado"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "POT_SistemasGeneralesNivelTipo": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Nacional",
+          "dispName": "Nivel nacional"
+        },
+        {
+          "ilicode": "Departamental",
+          "dispName": "Nivel departamental"
+        },
+        {
+          "ilicode": "Regional",
+          "dispName": "Nivel regional"
+        },
+        {
+          "ilicode": "Municipal",
+          "dispName": "Nivel municipal"
+        },
+        {
+          "ilicode": "Distrital",
+          "dispName": "Nivel distrital"
+        },
+        {
+          "ilicode": "Local",
+          "dispName": "Nivel local"
+        },
+        {
+          "ilicode": "Barrial",
+          "dispName": "Nivel barrial"
+        },
+        {
+          "ilicode": "Zonal",
+          "dispName": "Nivel zonal"
+        },
+        {
+          "ilicode": "Metropolitano",
+          "dispName": "Nivel metropolitano"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "POT_SistemasGeneralesTipo": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Equipamientos.Educacion",
+          "dispName": "(Equipamientos) Educación"
+        },
+        {
+          "ilicode": "Equipamientos.Cultura",
+          "dispName": "(Equipamientos) Cultura"
+        },
+        {
+          "ilicode": "Equipamientos.Salud",
+          "dispName": "(Equipamientos) Salud"
+        },
+        {
+          "ilicode": "Equipamientos.Bienestar_Social",
+          "dispName": "(Equipamientos) Bienestar social"
+        },
+        {
+          "ilicode": "Equipamientos.Culto",
+          "dispName": "(Equipamientos) Culto"
+        },
+        {
+          "ilicode": "Equipamientos.Deportivo_Recreativo",
+          "dispName": "(Equipamientos) Deportivo recreativo"
+        },
+        {
+          "ilicode": "Equipamientos.Seguridad_Ciudadana",
+          "dispName": "(Equipamientos) Seguridad ciudadana"
+        },
+        {
+          "ilicode": "Equipamientos.Defensa_Justicia",
+          "dispName": "(Equipamientos) Defensa y justicia"
+        },
+        {
+          "ilicode": "Equipamientos.Abastecimiento",
+          "dispName": "(Equipamientos) Abastecimiento de alimentos y seguridad alimentaria"
+        },
+        {
+          "ilicode": "Equipamientos.Recintos_Feriales",
+          "dispName": "(Equipamientos) Recintos feriales"
+        },
+        {
+          "ilicode": "Equipamientos.Cementerios_Servicios_Funerarios",
+          "dispName": "(Equipamientos) Cementerios y servicios funerarios"
+        },
+        {
+          "ilicode": "Equipamientos.Servicios_Administracion_Publica",
+          "dispName": "(Equipamientos) Servicios de administración pública"
+        },
+        {
+          "ilicode": "Equipamientos.Atencion_SPD",
+          "dispName": "(Equipamientos) Servicios de atención de usuarios de servicio públicos domiciliarios"
+        },
+        {
+          "ilicode": "Espacio_Publico.Elemento_Constitutivo",
+          "dispName": "(Espacio público) Elemento constitutivo de espacio público"
+        },
+        {
+          "ilicode": "Espacio_Publico.Elemento_Complementario",
+          "dispName": "(Espacio público) Elemento complementario de espacio público"
+        },
+        {
+          "ilicode": "Servicios_Publicos.Acueducto",
+          "dispName": "(Servicios públicos) Acueducto"
+        },
+        {
+          "ilicode": "Servicios_Publicos.Alcantarillado",
+          "dispName": "(Servicios públicos) Alcantarillado"
+        },
+        {
+          "ilicode": "Servicios_Publicos.Gas",
+          "dispName": "(Servicios públicos) Gas domiciliario"
+        },
+        {
+          "ilicode": "Servicios_Publicos.Energia",
+          "dispName": "(Servicios públicos) Energía"
+        },
+        {
+          "ilicode": "Servicios_Publicos.Telecomunicaciones",
+          "dispName": "(Servicios públicos) Telecomunicaciones"
+        },
+        {
+          "ilicode": "Servicios_Publicos.Disposicion_Final_Residuos.Escombrera",
+          "dispName": "(Servicios públicos-Disposición final de residuos sólidos) Escombrera"
+        },
+        {
+          "ilicode": "Servicios_Publicos.Disposicion_Final_Residuos.Relleno_Sanitario",
+          "dispName": "(Servicios públicos-Disposición final de residuos sólidos) Relleno Sanitario"
+        },
+        {
+          "ilicode": "Vias.Rural.Vias_Primer_Orden",
+          "dispName": "(Vías-Zona rural) Vías primer orden"
+        },
+        {
+          "ilicode": "Vias.Rural.Vias_Segundo_Orden",
+          "dispName": "(Vías-Zona rural) Vías de segundo orden"
+        },
+        {
+          "ilicode": "Vias.Rural.Vias_Tercer_Orden",
+          "dispName": "(Vías-Zona rural) Vías de tercer orden"
+        },
+        {
+          "ilicode": "Vias.Urbano.Principal",
+          "dispName": "(Vías-Zona urbana) Principal"
+        },
+        {
+          "ilicode": "Vias.Urbano.Secundaria",
+          "dispName": "(Vías-Zona urbana) Secundaria"
+        },
+        {
+          "ilicode": "Vias.Urbano.Local",
+          "dispName": "(Vías-Zona urbana) Local"
+        },
+        {
+          "ilicode": "Vias.Urbano.Peatonal",
+          "dispName": "(Vías-Zona urbana) Peatonal"
+        },
+        {
+          "ilicode": "Vias.Urbano.Ciclorruta",
+          "dispName": "(Vías-Zona urbana) Ciclorruta"
+        },
+        {
+          "ilicode": "Infraestructura_Transporte.Terrestre",
+          "dispName": "(Infraestructura de transporte) Terrestre"
+        },
+        {
+          "ilicode": "Infraestructura_Transporte.Aereo",
+          "dispName": "Aereo"
+        },
+        {
+          "ilicode": "Infraestructura_Transporte.Fluvial",
+          "dispName": "(Infraestructura de transporte) Fluvial"
+        },
+        {
+          "ilicode": "Infraestructura_Transporte.Maritimo",
+          "dispName": "(Infraestructura de transporte) Marítimo"
+        }
+      ],
+      "nodos_no_hoja": [
+        "Equipamientos",
+        "Espacio_Publico",
+        "Servicios_Publicos",
+        "Servicios_Publicos.Disposicion_Final_Residuos",
+        "Vias",
+        "Vias.Rural",
+        "Vias.Urbano",
+        "Infraestructura_Transporte"
+      ]
+    },
+    "POT_SueloProteccionUrbanoTipo": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Ambiental",
+          "dispName": "Ambiental"
+        },
+        {
+          "ilicode": "Infraestructura",
+          "dispName": "Infraestructura"
+        },
+        {
+          "ilicode": "Servicios_Publicos",
+          "dispName": "Servicios públicos"
+        },
+        {
+          "ilicode": "Patrimonio",
+          "dispName": "Patrimonio"
+        },
+        {
+          "ilicode": "Riesgo_No_Mitigable",
+          "dispName": "Riesgo no mitigable"
+        },
+        {
+          "ilicode": "Otro",
+          "dispName": "Otro"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "POT_TratamientoUrbanisticoTipo": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Desarrollo",
+          "dispName": "Desarrollo"
+        },
+        {
+          "ilicode": "Consolidacion",
+          "dispName": "Consolidación"
+        },
+        {
+          "ilicode": "Renovacion_Urbana.Reactivacion",
+          "dispName": "(Renovación urbana) Reactivación"
+        },
+        {
+          "ilicode": "Renovacion_Urbana.Redesarrollo",
+          "dispName": "(Renovación urbana) Redesarrollo"
+        },
+        {
+          "ilicode": "Renovacion_Urbana.Revitalizacion",
+          "dispName": "(Renovación urbana) Revitalización"
+        },
+        {
+          "ilicode": "Conservacion",
+          "dispName": "Conservación"
+        },
+        {
+          "ilicode": "Mejoramiento_Integral",
+          "dispName": "Mejoramiento integral"
+        }
+      ],
+      "nodos_no_hoja": [
+        "Renovacion_Urbana"
+      ]
+    },
+    "POT_UsoSueloRuralTipo": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Agricola",
+          "dispName": "Agrícola"
+        },
+        {
+          "ilicode": "Pecuario",
+          "dispName": "Pecuario"
+        },
+        {
+          "ilicode": "Forestal",
+          "dispName": "Forestal"
+        },
+        {
+          "ilicode": "Acuicultura",
+          "dispName": "Acuicultura"
+        },
+        {
+          "ilicode": "Mineria",
+          "dispName": "Minería"
+        },
+        {
+          "ilicode": "Hidrocarburos",
+          "dispName": "Hidrocarburos"
+        },
+        {
+          "ilicode": "Residencial",
+          "dispName": "Residencial"
+        },
+        {
+          "ilicode": "Dotacional_Institucional",
+          "dispName": "Dotacional  y/o institucional"
+        },
+        {
+          "ilicode": "Industrial",
+          "dispName": "Industrial"
+        },
+        {
+          "ilicode": "Turismo",
+          "dispName": "Turismo"
+        },
+        {
+          "ilicode": "Comercial_Servicios",
+          "dispName": "Comercial y/o servicios"
+        },
+        {
+          "ilicode": "Centro_Poblado",
+          "dispName": "Centro poblado"
+        },
+        {
+          "ilicode": "Conservacion_Proteccion_Ambiental.Preservacion",
+          "dispName": "(Conservación y protección ambiental) Preservación"
+        },
+        {
+          "ilicode": "Conservacion_Proteccion_Ambiental.Conservacion",
+          "dispName": "(Conservación y protección ambiental) Conservación"
+        },
+        {
+          "ilicode": "Conservacion_Proteccion_Ambiental.Restauracion",
+          "dispName": "(Conservación y protección ambiental) Restauración"
+        },
+        {
+          "ilicode": "Conservacion_Proteccion_Ambiental.Conocimiento",
+          "dispName": "(Conservación y protección ambiental) Conocimiento"
+        },
+        {
+          "ilicode": "Conservacion_Proteccion_Ambiental.Uso_Sostenible",
+          "dispName": "(Conservación y protección ambiental) Uso sostenible"
+        },
+        {
+          "ilicode": "Conservacion_Proteccion_Ambiental.Disfrute",
+          "dispName": "(Conservación y protección ambiental) Disfrute"
+        },
+        {
+          "ilicode": "Conservacion_Proteccion_Ambiental.Historico_Cultural",
+          "dispName": "(Conservación y protección ambiental) Histórico cultural"
+        },
+        {
+          "ilicode": "Otro",
+          "dispName": "Otro"
+        }
+      ],
+      "nodos_no_hoja": [
+        "Conservacion_Proteccion_Ambiental"
+      ]
+    },
+    "Area": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "INTERLIS",
+          "dispName": "INTERLIS"
+        },
+        {
+          "ilicode": "m",
+          "dispName": "m"
+        },
+        {
+          "ilicode": "INTERLIS",
+          "dispName": "INTERLIS"
+        },
+        {
+          "ilicode": "m",
+          "dispName": "m"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "COL_AreaTipo": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Area_Grafica",
+          "dispName": "Area gráfica"
+        },
+        {
+          "ilicode": "Area_Alfanumerica",
+          "dispName": "Area alfanumérica"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "COL_DocumentoTipo": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Cedula_Ciudadania",
+          "dispName": "Cédula de ciudadanía"
+        },
+        {
+          "ilicode": "Cedula_Extranjeria",
+          "dispName": "Cédula de extranjería"
+        },
+        {
+          "ilicode": "NIT",
+          "dispName": "NIT"
+        },
+        {
+          "ilicode": "Pasaporte",
+          "dispName": "Pasaporte"
+        },
+        {
+          "ilicode": "Registro_Civil",
+          "dispName": "Registro civil"
+        },
+        {
+          "ilicode": "Tarjeta_Identidad",
+          "dispName": "Tarjeta de identidad"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "COL_FormatoTipo": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Imagen",
+          "dispName": "Imagen"
+        },
+        {
+          "ilicode": "Documento",
+          "dispName": "Documento"
+        },
+        {
+          "ilicode": "Mapa",
+          "dispName": "Mapa"
+        },
+        {
+          "ilicode": "Video",
+          "dispName": "Video"
+        },
+        {
+          "ilicode": "Otro",
+          "dispName": "Otro"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "COL_FuenteEspacialTipo": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Croquis_Campo",
+          "dispName": "Croquis de campo"
+        },
+        {
+          "ilicode": "Datos_Crudos",
+          "dispName": "Datos crudos (GPS, Estación total, LiDAR, etc.)"
+        },
+        {
+          "ilicode": "Ortofoto",
+          "dispName": "Ortofoto"
+        },
+        {
+          "ilicode": "Informe_Tecnico",
+          "dispName": "Informe técnico"
+        },
+        {
+          "ilicode": "Registro_Fotografico",
+          "dispName": "Registro fotográfico"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "COL_GrupoInteresadoTipo": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Grupo_Civil",
+          "dispName": "Grupo civil"
+        },
+        {
+          "ilicode": "Grupo_Empresarial",
+          "dispName": "Grupo empresarial"
+        },
+        {
+          "ilicode": "Grupo_Etnico",
+          "dispName": "Grupo étnico"
+        },
+        {
+          "ilicode": "Grupo_Mixto",
+          "dispName": "Grupo mixto"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "COL_InteresadoTipo": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Persona_Natural",
+          "dispName": "Persona Natural"
+        },
+        {
+          "ilicode": "Persona_Juridica",
+          "dispName": "Persona Jurídica"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "COL_InterpolacionTipo": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Aislado",
+          "dispName": "Aislado"
+        },
+        {
+          "ilicode": "Intermedio_Arco",
+          "dispName": "Intermedio arco"
+        },
+        {
+          "ilicode": "Intermedio_Linea",
+          "dispName": "Intermedio línea"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "COL_MetodoProduccionTipo": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Metodo_Directo",
+          "dispName": "Método directo"
+        },
+        {
+          "ilicode": "Metodo_Indirecto",
+          "dispName": "Método indirecto"
+        },
+        {
+          "ilicode": "Metodo_Declarativo_y_Colaborativo",
+          "dispName": "Método declarativo y colaborativo"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "COL_PuntoTipo": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Control",
+          "dispName": "Control"
+        },
+        {
+          "ilicode": "Catastro",
+          "dispName": "Catastro"
+        },
+        {
+          "ilicode": "Otro",
+          "dispName": "Otro"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "COL_RelacionSuperficieTipo": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "En_Rasante",
+          "dispName": "En rasante"
+        },
+        {
+          "ilicode": "En_Vuelo",
+          "dispName": "En vuelo"
+        },
+        {
+          "ilicode": "En_Subsuelo",
+          "dispName": "En subsuelo"
+        },
+        {
+          "ilicode": "Otro",
+          "dispName": "Otro"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "COL_UnidadAdministrativaBasicaTipo": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Administrativo_Del_Deporte",
+          "dispName": "Sector Administrativo del Deporte"
+        },
+        {
+          "ilicode": "Agropecuario_Pesquero_Desarrollo_Rural",
+          "dispName": "Sector Agropecuario, Pesquero y de Desarrollo Rural"
+        },
+        {
+          "ilicode": "Ambiente_Desarrollo_Sostenible",
+          "dispName": "Sector Ambiente y Desarrollo Sostenible"
+        },
+        {
+          "ilicode": "Ciencia_Tecnologia",
+          "dispName": "Sector Ciencia y Tecnología"
+        },
+        {
+          "ilicode": "Comercio_Industria_Turismo",
+          "dispName": "Sector de Comercio, Industria y Turismo"
+        },
+        {
+          "ilicode": "Cultura",
+          "dispName": "Sector Cultura"
+        },
+        {
+          "ilicode": "Defensa_Nacional",
+          "dispName": "Sector de la Defensa Nacional"
+        },
+        {
+          "ilicode": "Educacion_Nacional",
+          "dispName": "Sector Educación Nacional"
+        },
+        {
+          "ilicode": "Funcion_Publica",
+          "dispName": "Sector Función Pública"
+        },
+        {
+          "ilicode": "Hacienda_Credito_Publico",
+          "dispName": "Sector Hacienda y Crédito Público"
+        },
+        {
+          "ilicode": "Igualdad_Equidad",
+          "dispName": "Sector de Igualdad y Equidad"
+        },
+        {
+          "ilicode": "Inclusion_Social_Reconciliacion",
+          "dispName": "Sector Inclusión Social y Reconciliación"
+        },
+        {
+          "ilicode": "Informacion_Estadistica",
+          "dispName": "Sector Información Estadística"
+        },
+        {
+          "ilicode": "Inteligencia_Estrategica_Contrainteligencia",
+          "dispName": "Sector Inteligencia Estratégica y Contrainteligencia"
+        },
+        {
+          "ilicode": "Interior",
+          "dispName": "Sector del Interior"
+        },
+        {
+          "ilicode": "Justicia_Del_Derecho",
+          "dispName": "Sector Justicia y del Derecho"
+        },
+        {
+          "ilicode": "Minas_Energia",
+          "dispName": "Sector Minas y Energía"
+        },
+        {
+          "ilicode": "Planeacion",
+          "dispName": "Sector de Planeación"
+        },
+        {
+          "ilicode": "Presidencia_De_La_Republica",
+          "dispName": "Sector Presidencia de la República"
+        },
+        {
+          "ilicode": "Relaciones_Exteriores",
+          "dispName": "Sector Relaciones Exteriores"
+        },
+        {
+          "ilicode": "Salud_Proteccion_Social",
+          "dispName": "Sector Salud y de la Protección Social"
+        },
+        {
+          "ilicode": "Tecnologias_Informacion_Comunicaciones",
+          "dispName": "Sector de las Tecnologías de la Información y las Comunicaciones"
+        },
+        {
+          "ilicode": "Trabajo",
+          "dispName": "Sector del Trabajo"
+        },
+        {
+          "ilicode": "Transporte",
+          "dispName": "Sector Transporte"
+        },
+        {
+          "ilicode": "Vivienda_Ciudad_Territorio",
+          "dispName": "Sector Vivienda, Ciudad y Territorio"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "COL_EstadoDisponibilidadTipo": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Convertido",
+          "dispName": "Convertido"
+        },
+        {
+          "ilicode": "Desconocido",
+          "dispName": "Desconocido"
+        },
+        {
+          "ilicode": "Disponible",
+          "dispName": "Disponible"
+        }
+      ],
+      "nodos_no_hoja": []
+    },
+    "COL_FuenteAdministrativaTipo": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "extiende": null,
+      "valores": [
+        {
+          "ilicode": "Documento_Publico",
+          "dispName": "Documento público"
+        },
+        {
+          "ilicode": "Documento_Privado",
+          "dispName": "Documento privado"
+        }
+      ],
+      "nodos_no_hoja": []
+    }
+  },
+  "clases": {
+    "GM_Geometry2DListValue": {
+      "modelo": "ISO19107_PLANAS_V3_1",
+      "topic": null,
+      "extiende": null,
+      "abstracta": false,
+      "estructura": true,
+      "atributos": [],
+      "restricciones": []
+    },
+    "GM_Curve2DListValue": {
+      "modelo": "ISO19107_PLANAS_V3_1",
+      "topic": null,
+      "extiende": null,
+      "abstracta": false,
+      "estructura": true,
+      "atributos": [
+        {
+          "nombre": "value",
+          "tipo": "GM_Curve2D",
+          "obligatorio": true,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "GM_Surface2DListValue": {
+      "modelo": "ISO19107_PLANAS_V3_1",
+      "topic": null,
+      "extiende": null,
+      "abstracta": false,
+      "estructura": true,
+      "atributos": [
+        {
+          "nombre": "value",
+          "tipo": "GM_Surface2D",
+          "obligatorio": true,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "GM_MultiCurve2D": {
+      "modelo": "ISO19107_PLANAS_V3_1",
+      "topic": null,
+      "extiende": null,
+      "abstracta": false,
+      "estructura": true,
+      "atributos": [
+        {
+          "nombre": "geometry",
+          "tipo": "LIST {1..*} OF ISO19107_PLANAS_V3_1.GM_Curve2DListValue",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "GM_MultiSurface2D": {
+      "modelo": "ISO19107_PLANAS_V3_1",
+      "topic": null,
+      "extiende": null,
+      "abstracta": false,
+      "estructura": true,
+      "atributos": [
+        {
+          "nombre": "geometry",
+          "tipo": "LIST {1..*} OF ISO19107_PLANAS_V3_1.GM_Surface2DListValue",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "GM_Curve3DListValue": {
+      "modelo": "ISO19107_PLANAS_V3_1",
+      "topic": null,
+      "extiende": null,
+      "abstracta": false,
+      "estructura": true,
+      "atributos": [
+        {
+          "nombre": "value",
+          "tipo": "GM_Curve3D",
+          "obligatorio": true,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "GM_Surface3DListValue": {
+      "modelo": "ISO19107_PLANAS_V3_1",
+      "topic": null,
+      "extiende": null,
+      "abstracta": false,
+      "estructura": true,
+      "atributos": [
+        {
+          "nombre": "value",
+          "tipo": "GM_Surface3D",
+          "obligatorio": true,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "GM_MultiCurve3D": {
+      "modelo": "ISO19107_PLANAS_V3_1",
+      "topic": null,
+      "extiende": null,
+      "abstracta": false,
+      "estructura": true,
+      "atributos": [
+        {
+          "nombre": "geometry",
+          "tipo": "LIST {1..*} OF ISO19107_PLANAS_V3_1.GM_Curve3DListValue",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "GM_MultiSurface3D": {
+      "modelo": "ISO19107_PLANAS_V3_1",
+      "topic": null,
+      "extiende": null,
+      "abstracta": false,
+      "estructura": true,
+      "atributos": [
+        {
+          "nombre": "geometry",
+          "tipo": "LIST {1..*} OF ISO19107_PLANAS_V3_1.GM_Surface3DListValue",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "POT_Derecho": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_DRR",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [],
+      "restricciones": []
+    },
+    "POT_FuenteAdministrativa": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_FuenteAdministrativa",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Tipo",
+          "tipo": "LADM_COL_v_2_0_0_Ext_POT.POT_FuenteAdministrativaTipo",
+          "obligatorio": true,
+          "extendido": true
+        },
+        {
+          "nombre": "Tipo_POT",
+          "tipo": "LADM_COL_v_2_0_0_Ext_POT.POT_PlanOrdenamientoTerritorialTipo",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Numero_Fuente",
+          "tipo": "TEXT*150",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Tipo_Revision",
+          "tipo": "LADM_COL_v_2_0_0_Ext_POT.POT_RevisionTipo",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "POT_FuenteEspacial": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_FuenteEspacial",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Escala",
+          "tipo": "0.000 .. 100000000.000",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Fecha_Publicacion",
+          "tipo": "INTERLIS.XMLDate",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Responsable",
+          "tipo": "MTEXT*500",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "POT_Municipio": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_Interesado",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Codigo_Departamento",
+          "tipo": "TEXT*2",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Codigo_Municipio",
+          "tipo": "TEXT*3",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Nombre_Municipio",
+          "tipo": "TEXT*255",
+          "obligatorio": true,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "POT_NU_AgrupacionInteresados": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_AgrupacionInteresados",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [],
+      "restricciones": []
+    },
+    "POT_NU_AgrupacionUnidadesEspaciales": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_AgrupacionUnidadesEspaciales",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [],
+      "restricciones": []
+    },
+    "POT_NU_CadenaCarasLimite": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_CadenaCarasLimite",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [],
+      "restricciones": []
+    },
+    "POT_NU_Punto": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_Punto",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [],
+      "restricciones": []
+    },
+    "POT_ReferenciaLineaSistemasGenerales": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": null,
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Geometria",
+          "tipo": "ISO19107_PLANAS_V3_1.GM_Curve3D",
+          "obligatorio": true,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "POT_ReferenciaPuntoSistemasGenerales": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": null,
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Geometria",
+          "tipo": "ISO19107_PLANAS_V3_1.GM_Point3D",
+          "obligatorio": true,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "POT_Responsabilidad": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_DRR",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [],
+      "restricciones": []
+    },
+    "POT_Restriccion": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_DRR",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [],
+      "restricciones": []
+    },
+    "POT_UAB_AreaCondicionAmenaza": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_UnidadAdministrativaBasica",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Fenomeno",
+          "tipo": "LADM_COL_v_2_0_0_Ext_POT.POT_FenomenoAmenazaTipo",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Categoria_Amenaza",
+          "tipo": "LADM_COL_v_2_0_0_Ext_POT.POT_CategoriaAmenazaTipo",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Priorizacion",
+          "tipo": "LADM_COL_v_2_0_0_Ext_POT.POT_PriorizacionTipo",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Medida_Intervencion",
+          "tipo": "LADM_COL_v_2_0_0_Ext_POT.POT_MedidaIntervencionTipo",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Detalle_Medida_Intervencacion",
+          "tipo": "MTEXT*500",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Detalle_Fenomeno",
+          "tipo": "TEXT*500",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": [
+        "Tipo == #Vivienda_Ciudad_Territorio"
+      ]
+    },
+    "POT_UAB_AreaCondicionRiesgo": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_UnidadAdministrativaBasica",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Fenomeno",
+          "tipo": "LADM_COL_v_2_0_0_Ext_POT.POT_FenomenoAmenazaTipo",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Priorizacion",
+          "tipo": "LADM_COL_v_2_0_0_Ext_POT.POT_PriorizacionTipo",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Medida_Intervencion",
+          "tipo": "LADM_COL_v_2_0_0_Ext_POT.POT_MedidaIntervencionTipo",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Detalle_Medida_Intervencacion",
+          "tipo": "MTEXT*500",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Detalle_Fenomeno",
+          "tipo": "TEXT*500",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": [
+        "Tipo == #Vivienda_Ciudad_Territorio"
+      ]
+    },
+    "POT_UAB_CentroPobladoRural": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_UnidadAdministrativaBasica",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Nombre",
+          "tipo": "TEXT*255",
+          "obligatorio": true,
+          "extendido": true
+        },
+        {
+          "nombre": "Codigo",
+          "tipo": "TEXT*8",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": [
+        "Tipo == #Vivienda_Ciudad_Territorio"
+      ]
+    },
+    "POT_UAB_ClasificacionSuelo": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_UnidadAdministrativaBasica",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Tipo_Clasificacion_Suelo",
+          "tipo": "LADM_COL_v_2_0_0_Ext_POT.POT_ClasificacionSueloTipo",
+          "obligatorio": true,
+          "extendido": false
+        }
+      ],
+      "restricciones": [
+        "Tipo == #Vivienda_Ciudad_Territorio"
+      ]
+    },
+    "POT_UAB_SistemasGenerales": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_UnidadAdministrativaBasica",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Tipo_Sistema_General",
+          "tipo": "LADM_COL_v_2_0_0_Ext_POT.POT_SistemasGeneralesTipo",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Detalle_Sistema_General",
+          "tipo": "TEXT*255",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Nivel",
+          "tipo": "LADM_COL_v_2_0_0_Ext_POT.POT_SistemasGeneralesNivelTipo",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Estado",
+          "tipo": "LADM_COL_v_2_0_0_Ext_POT.POT_SistemasGeneralesEstadoTipo",
+          "obligatorio": true,
+          "extendido": false
+        }
+      ],
+      "restricciones": [
+        "Tipo == #Vivienda_Ciudad_Territorio"
+      ]
+    },
+    "POT_UAB_TratamientoUrbanistico": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_UnidadAdministrativaBasica",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Tipo_Tratamiento_Urbanistico",
+          "tipo": "LADM_COL_v_2_0_0_Ext_POT.POT_TratamientoUrbanisticoTipo",
+          "obligatorio": true,
+          "extendido": false
+        }
+      ],
+      "restricciones": [
+        "Tipo == #Vivienda_Ciudad_Territorio"
+      ]
+    },
+    "POT_UAB_ZonificacionAmenaza": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_UnidadAdministrativaBasica",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Fenomeno",
+          "tipo": "LADM_COL_v_2_0_0_Ext_POT.POT_FenomenoAmenazaTipo",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Categoria_Amenaza",
+          "tipo": "LADM_COL_v_2_0_0_Ext_POT.POT_CategoriaAmenazaTipo",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Descripcion",
+          "tipo": "MTEXT*255",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Detalle_Fenomeno",
+          "tipo": "TEXT*500",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": [
+        "Tipo == #Vivienda_Ciudad_Territorio"
+      ]
+    },
+    "POT_UE_AreaCondicionAmenaza": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_UnidadEspacial",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [],
+      "restricciones": []
+    },
+    "POT_UE_AreaCondicionRiesgo": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_UnidadEspacial",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [],
+      "restricciones": []
+    },
+    "POT_UE_AreasActividad": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_UnidadEspacial",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [],
+      "restricciones": []
+    },
+    "POT_UE_CentroPobladoRural": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_UnidadEspacial",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [],
+      "restricciones": []
+    },
+    "POT_UE_ClasificacionSuelo": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_UnidadEspacial",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [],
+      "restricciones": []
+    },
+    "POT_UE_SistemasGenerales": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_UnidadEspacial",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [],
+      "restricciones": []
+    },
+    "POT_UE_SueloProteccionUrbano": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_UnidadEspacial",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [],
+      "restricciones": []
+    },
+    "POT_UE_TratamientoUrbanistico": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_UnidadEspacial",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [],
+      "restricciones": []
+    },
+    "POT_UE_ZonificacionAmenaza": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_UnidadEspacial",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [],
+      "restricciones": []
+    },
+    "POT_UE_ZonificacionSueloRural": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_UnidadEspacial",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [],
+      "restricciones": []
+    },
+    "POT_UsoCompatibleComplementarioValor": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": null,
+      "abstracta": false,
+      "estructura": true,
+      "atributos": [
+        {
+          "nombre": "Valor",
+          "tipo": "TEXT*500",
+          "obligatorio": true,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "POT_UsoCondicionadoRestringidoValor": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": null,
+      "abstracta": false,
+      "estructura": true,
+      "atributos": [
+        {
+          "nombre": "Valor",
+          "tipo": "TEXT*500",
+          "obligatorio": true,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "POT_UsoProhibidoValor": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": null,
+      "abstracta": false,
+      "estructura": true,
+      "atributos": [
+        {
+          "nombre": "Valor",
+          "tipo": "TEXT*500",
+          "obligatorio": true,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "POT_UAB_AreasActividad": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_UnidadAdministrativaBasica",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Uso_Principal",
+          "tipo": "LADM_COL_v_2_0_0_Ext_POT.POT_AreaActividadTipo",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Detalle_Uso_Principal",
+          "tipo": "MTEXT*255",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Uso_Compatible_Complementario",
+          "tipo": "BAG {1..*} OF LADM_COL_v_2_0_0_Ext_POT.Planes_Ordenamiento_Territorial.POT_UsoCompatibleComplementarioValor",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Uso_Condicionado_Restringido",
+          "tipo": "BAG {1..*} OF LADM_COL_v_2_0_0_Ext_POT.Planes_Ordenamiento_Territorial.POT_UsoCondicionadoRestringidoValor",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Uso_Prohibido",
+          "tipo": "BAG {1..*} OF LADM_COL_v_2_0_0_Ext_POT.Planes_Ordenamiento_Territorial.POT_UsoProhibidoValor",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": [
+        "Tipo == #Vivienda_Ciudad_Territorio"
+      ]
+    },
+    "POT_UAB_SueloProteccionUrbano": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_UnidadAdministrativaBasica",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Uso_Principal",
+          "tipo": "LADM_COL_v_2_0_0_Ext_POT.POT_SueloProteccionUrbanoTipo",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Detalle_Uso_Principal",
+          "tipo": "MTEXT*255",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Uso_Compatible_Complementario",
+          "tipo": "BAG {1..*} OF LADM_COL_v_2_0_0_Ext_POT.Planes_Ordenamiento_Territorial.POT_UsoCompatibleComplementarioValor",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Uso_Condicionado_Restringido",
+          "tipo": "BAG {1..*} OF LADM_COL_v_2_0_0_Ext_POT.Planes_Ordenamiento_Territorial.POT_UsoCondicionadoRestringidoValor",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Uso_Prohibido",
+          "tipo": "BAG {1..*} OF LADM_COL_v_2_0_0_Ext_POT.Planes_Ordenamiento_Territorial.POT_UsoProhibidoValor",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "POT_UAB_ZonificacionSueloRural": {
+      "modelo": "LADM_COL_v_2_0_0_Ext_POT",
+      "topic": "Planes_Ordenamiento_Territorial",
+      "extiende": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_UnidadAdministrativaBasica",
+      "abstracta": false,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Uso_Principal",
+          "tipo": "LADM_COL_v_2_0_0_Ext_POT.POT_UsoSueloRuralTipo",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Tipo_Categoria_Rural",
+          "tipo": "LADM_COL_v_2_0_0_Ext_POT.POT_CategoriaRuralTipo",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Detalle_Uso_Principal",
+          "tipo": "TEXT*255",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Uso_Compatible_Complementario",
+          "tipo": "BAG {1..*} OF LADM_COL_v_2_0_0_Ext_POT.Planes_Ordenamiento_Territorial.POT_UsoCompatibleComplementarioValor",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Uso_Condicionado_Restringido",
+          "tipo": "BAG {1..*} OF LADM_COL_v_2_0_0_Ext_POT.Planes_Ordenamiento_Territorial.POT_UsoCondicionadoRestringidoValor",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Uso_Prohibido",
+          "tipo": "BAG {1..*} OF LADM_COL_v_2_0_0_Ext_POT.Planes_Ordenamiento_Territorial.POT_UsoProhibidoValor",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": [
+        "Tipo == #Vivienda_Ciudad_Territorio"
+      ]
+    },
+    "ExtArchivo": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "topic": "LADM_Nucleo",
+      "extiende": null,
+      "abstracta": false,
+      "estructura": true,
+      "atributos": [
+        {
+          "nombre": "Fecha_Aceptacion",
+          "tipo": "INTERLIS.XMLDate",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Datos",
+          "tipo": "TEXT*255",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Extraccion",
+          "tipo": "INTERLIS.XMLDate",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Fecha_Grabacion",
+          "tipo": "INTERLIS.XMLDate",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Fecha_Entrega",
+          "tipo": "INTERLIS.XMLDate",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Espacio_De_Nombres",
+          "tipo": "TEXT*255",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Local_Id",
+          "tipo": "TEXT*255",
+          "obligatorio": true,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "ExtDireccion": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "topic": "LADM_Nucleo",
+      "extiende": null,
+      "abstracta": false,
+      "estructura": true,
+      "atributos": [
+        {
+          "nombre": "Tipo_Direccion",
+          "tipo": "( @DISP \"Estructurada\" Estructurada, @DISP \"No estructurada\" No_Estructurada )",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Es_Direccion_Principal",
+          "tipo": "BOOLEAN",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Localizacion",
+          "tipo": "ISO19107_PLANAS_V3_1.GM_Point3D",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Codigo_Postal",
+          "tipo": "TEXT*6",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Clase_Via_Principal",
+          "tipo": "( @DISP \"Avenida calle\" Avenida_Calle, @DISP \"Avenida carrera\" Avenida_Carrera, @DISP \"Avenida\" Avenida, @DISP \"Autopista\" Autopista, @DISP \"Circunvalar\" Circunvalar, @DISP \"Calle\" Calle, @DISP \"Carrera\" Carrera, @DISP \"Diagonal\" Diagonal, @DISP \"Transversal\" Transversal, @DISP \"Circular\" Circular )",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Valor_Via_Principal",
+          "tipo": "TEXT*100",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Letra_Via_Principal",
+          "tipo": "TEXT*20",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Sector_Ciudad",
+          "tipo": "( Norte, Sur, Este, Oeste )",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Valor_Via_Generadora",
+          "tipo": "TEXT*100",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Letra_Via_Generadora",
+          "tipo": "TEXT*20",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Numero_Predio",
+          "tipo": "TEXT*20",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Sector_Predio",
+          "tipo": "( Norte, Sur, Este, Oeste )",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Complemento",
+          "tipo": "TEXT*255",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Nombre_Predio",
+          "tipo": "TEXT*255",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "Oid": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "topic": "LADM_Nucleo",
+      "extiende": null,
+      "abstracta": true,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Espacio_De_Nombres",
+          "tipo": "TEXT*255",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Local_Id",
+          "tipo": "TEXT*255",
+          "obligatorio": true,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "COL_AreaValor": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "topic": "LADM_Nucleo",
+      "extiende": null,
+      "abstracta": false,
+      "estructura": true,
+      "atributos": [
+        {
+          "nombre": "Tipo",
+          "tipo": "COL_AreaTipo",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Area",
+          "tipo": "0.0 .. 99999999999999.9 [LADM_COL_v_4_0_1_Nucleo.m2]",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Datos_Proyeccion",
+          "tipo": "TEXT",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "ExtInteresado": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "topic": "LADM_Nucleo",
+      "extiende": null,
+      "abstracta": false,
+      "estructura": true,
+      "atributos": [
+        {
+          "nombre": "Ext_Direccion_ID",
+          "tipo": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.ExtDireccion",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Huella_Dactilar",
+          "tipo": "TEXT*2000",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Nombre",
+          "tipo": "TEXT*255",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Fotografia",
+          "tipo": "TEXT*2000",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Firma",
+          "tipo": "TEXT*2000",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Documento_Escaneado",
+          "tipo": "TEXT*255",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "ObjetoVersionado": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "topic": "LADM_Nucleo",
+      "extiende": "Oid",
+      "abstracta": true,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Comienzo_Vida_Util_Version",
+          "tipo": "INTERLIS.XMLDateTime",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Fin_Vida_Util_Version",
+          "tipo": "INTERLIS.XMLDateTime",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": [
+        "Fin_Vida_Util_Version >= Comienzo_Vida_Util_Version"
+      ]
+    },
+    "COL_DRR": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "topic": "LADM_Nucleo",
+      "extiende": "ObjetoVersionado",
+      "abstracta": true,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Descripcion",
+          "tipo": "TEXT*255",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "COL_Fuente": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "topic": "LADM_Nucleo",
+      "extiende": "Oid",
+      "abstracta": true,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Estado_Disponibilidad",
+          "tipo": "COL_EstadoDisponibilidadTipo",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Ext_Archivo_ID",
+          "tipo": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.ExtArchivo",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Tipo_Formato",
+          "tipo": "COL_FormatoTipo",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Fecha_Documento_Fuente",
+          "tipo": "INTERLIS.XMLDate",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Nombre",
+          "tipo": "TEXT*255",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Descripcion",
+          "tipo": "TEXT*255",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "URL",
+          "tipo": "TEXT*2000",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "COL_Interesado": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "topic": "LADM_Nucleo",
+      "extiende": "ObjetoVersionado",
+      "abstracta": true,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "ext_PID",
+          "tipo": "LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.ExtInteresado",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Nombre",
+          "tipo": "TEXT*255",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Tipo_Interesado",
+          "tipo": "COL_InteresadoTipo",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Tipo_Documento",
+          "tipo": "COL_DocumentoTipo",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Numero_Documento",
+          "tipo": "TEXT*255",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "COL_AgrupacionInteresados": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "topic": "LADM_Nucleo",
+      "extiende": "COL_Interesado",
+      "abstracta": true,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Tipo",
+          "tipo": "COL_GrupoInteresadoTipo",
+          "obligatorio": true,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "COL_FuenteAdministrativa": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "topic": "LADM_Nucleo",
+      "extiende": "COL_Fuente",
+      "abstracta": true,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Tipo",
+          "tipo": "COL_FuenteAdministrativaTipo",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Fecha_Fin",
+          "tipo": "INTERLIS.XMLDate",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "COL_UnidadAdministrativaBasica": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "topic": "LADM_Nucleo",
+      "extiende": "ObjetoVersionado",
+      "abstracta": true,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Nombre",
+          "tipo": "TEXT*255",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Tipo",
+          "tipo": "COL_UnidadAdministrativaBasicaTipo",
+          "obligatorio": true,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "COL_UnidadEspacial": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "topic": "LADM_Nucleo",
+      "extiende": "ObjetoVersionado",
+      "abstracta": true,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Area",
+          "tipo": "LIST {0..*} OF LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.COL_AreaValor",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Ext_Direccion_ID",
+          "tipo": "LIST {0..*} OF LADM_COL_v_4_0_1_Nucleo.LADM_Nucleo.ExtDireccion",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Etiqueta",
+          "tipo": "TEXT*255",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Relacion_Superficie",
+          "tipo": "COL_RelacionSuperficieTipo",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Geometria",
+          "tipo": "ISO19107_PLANAS_V3_1.GM_MultiSurface3D",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "COL_AgrupacionUnidadesEspaciales": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "topic": "LADM_Nucleo",
+      "extiende": "ObjetoVersionado",
+      "abstracta": true,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Nivel_Jerarquico",
+          "tipo": "Integer",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Etiqueta",
+          "tipo": "TEXT*255",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Nombre",
+          "tipo": "TEXT*255",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Punto_Referencia",
+          "tipo": "ISO19107_PLANAS_V3_1.GM_Point3D",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "COL_Punto": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "topic": "LADM_Nucleo",
+      "extiende": "ObjetoVersionado",
+      "abstracta": true,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Posicion_Interpolacion",
+          "tipo": "COL_InterpolacionTipo",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "PuntoTipo",
+          "tipo": "COL_PuntoTipo",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "MetodoProduccion",
+          "tipo": "COL_MetodoProduccionTipo",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Geometria",
+          "tipo": "ISO19107_PLANAS_V3_1.GM_Point3D",
+          "obligatorio": true,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "COL_FuenteEspacial": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "topic": "LADM_Nucleo",
+      "extiende": "COL_Fuente",
+      "abstracta": true,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Tipo",
+          "tipo": "COL_FuenteEspacialTipo",
+          "obligatorio": true,
+          "extendido": false
+        },
+        {
+          "nombre": "Metadato",
+          "tipo": "MTEXT",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    },
+    "COL_CadenaCarasLimite": {
+      "modelo": "LADM_COL_v_4_0_1_Nucleo",
+      "topic": "LADM_Nucleo",
+      "extiende": "ObjetoVersionado",
+      "abstracta": true,
+      "estructura": false,
+      "atributos": [
+        {
+          "nombre": "Geometria",
+          "tipo": "ISO19107_PLANAS_V3_1.GM_Curve3D",
+          "obligatorio": false,
+          "extendido": false
+        },
+        {
+          "nombre": "Localizacion_Textual",
+          "tipo": "TEXT*255",
+          "obligatorio": false,
+          "extendido": false
+        }
+      ],
+      "restricciones": []
+    }
+  },
+  "asociaciones": [
+    {
+      "nombre": "pot_clasificacionsuelo_centropoblado",
+      "roles": [
+        {
+          "rol": "centro_poblado",
+          "cardinalidad": "0..*",
+          "clase": "POT_UAB_CentroPobladoRural"
+        },
+        {
+          "rol": "clasificacion_suelo",
+          "cardinalidad": "1",
+          "clase": "POT_UAB_ClasificacionSuelo"
+        }
+      ]
+    },
+    {
+      "nombre": "pot_referencialinea_sistemasgenerales",
+      "roles": [
+        {
+          "rol": "sistemasgenerales",
+          "cardinalidad": "1",
+          "clase": "POT_UE_SistemasGenerales"
+        },
+        {
+          "rol": "referencialinea",
+          "cardinalidad": "0..1",
+          "clase": "POT_ReferenciaLineaSistemasGenerales"
+        }
+      ]
+    },
+    {
+      "nombre": "pot_referenciapunto_sistemasgenerales",
+      "roles": [
+        {
+          "rol": "sistemagenerales",
+          "cardinalidad": "1",
+          "clase": "POT_UE_SistemasGenerales"
+        },
+        {
+          "rol": "referenciapunto",
+          "cardinalidad": "0..1",
+          "clase": "POT_ReferenciaPuntoSistemasGenerales"
+        }
+      ]
+    },
+    {
+      "nombre": "pot_areasactividad_centropoblado",
+      "roles": [
+        {
+          "rol": "area_actividad",
+          "cardinalidad": "0..*",
+          "clase": "POT_UAB_AreasActividad"
+        },
+        {
+          "rol": "centro_poblado",
+          "cardinalidad": "0..1",
+          "clase": "POT_UAB_CentroPobladoRural"
+        }
+      ]
+    },
+    {
+      "nombre": "pot_clasificacionsuelo_zonificacionsuelo",
+      "roles": [
+        {
+          "rol": "clasificacion_suelo_rural",
+          "cardinalidad": "1",
+          "clase": "POT_UAB_ClasificacionSuelo"
+        },
+        {
+          "rol": "zonificacion_suelo_rural",
+          "cardinalidad": "0..*",
+          "clase": "POT_UAB_ZonificacionSueloRural"
+        }
+      ]
+    },
+    {
+      "nombre": "pot_zonificacionsuelo_centropoblado",
+      "roles": [
+        {
+          "rol": "pot_desarrollo_restringido",
+          "cardinalidad": "1",
+          "clase": "POT_UAB_ZonificacionSueloRural"
+        },
+        {
+          "rol": "centro_poblado",
+          "cardinalidad": "0..*",
+          "clase": "POT_UAB_CentroPobladoRural"
+        }
+      ]
+    },
+    {
+      "nombre": "col_baunitComoInteresado",
+      "roles": [
+        {
+          "rol": "interesado",
+          "cardinalidad": "0..*",
+          "clase": "COL_Interesado"
+        }
+      ]
+    },
+    {
+      "nombre": "col_baunitRrr",
+      "roles": [
+        {
+          "rol": "unidad",
+          "cardinalidad": "1",
+          "clase": "COL_UnidadAdministrativaBasica"
+        },
+        {
+          "rol": "rrr",
+          "cardinalidad": "1..*",
+          "clase": "COL_DRR"
+        }
+      ]
+    },
+    {
+      "nombre": "col_miembros",
+      "roles": [
+        {
+          "rol": "interesado",
+          "cardinalidad": "2..*",
+          "clase": "COL_Interesado"
+        }
+      ]
+    },
+    {
+      "nombre": "col_rrrFuente",
+      "roles": [
+        {
+          "rol": "fuente_administrativa",
+          "cardinalidad": "1..*",
+          "clase": "COL_FuenteAdministrativa"
+        },
+        {
+          "rol": "rrr",
+          "cardinalidad": "0..*",
+          "clase": "COL_DRR"
+        }
+      ]
+    },
+    {
+      "nombre": "col_ueBaunit",
+      "roles": [
+        {
+          "rol": "baunit",
+          "cardinalidad": "0..*",
+          "clase": "COL_UnidadAdministrativaBasica"
+        }
+      ]
+    },
+    {
+      "nombre": "col_unidadFuente",
+      "roles": [
+        {
+          "rol": "fuente_administrativa",
+          "cardinalidad": "0..*",
+          "clase": "COL_FuenteAdministrativa"
+        },
+        {
+          "rol": "unidad",
+          "cardinalidad": "0..*",
+          "clase": "COL_UnidadAdministrativaBasica"
+        }
+      ]
+    },
+    {
+      "nombre": "col_responsableFuente",
+      "roles": [
+        {
+          "rol": "interesado",
+          "cardinalidad": "0..*",
+          "clase": "COL_Interesado"
+        }
+      ]
+    },
+    {
+      "nombre": "col_ueJerarquiaGrupo",
+      "roles": [
+        {
+          "rol": "elemento",
+          "cardinalidad": "0..*",
+          "clase": "COL_AgrupacionUnidadesEspaciales"
+        }
+      ]
+    },
+    {
+      "nombre": "col_puntoReferencia",
+      "roles": [
+        {
+          "rol": "punto",
+          "cardinalidad": "0..1",
+          "clase": "COL_Punto"
+        }
+      ]
+    },
+    {
+      "nombre": "col_rrrInteresado",
+      "roles": [
+        {
+          "rol": "interesado",
+          "cardinalidad": "0..1",
+          "clase": "COL_Interesado"
+        }
+      ]
+    },
+    {
+      "nombre": "col_ueUeGrupo",
+      "roles": [
+        {
+          "rol": "parte",
+          "cardinalidad": "0..*",
+          "clase": "COL_UnidadEspacial"
+        },
+        {
+          "rol": "todo",
+          "cardinalidad": "0..*",
+          "clase": "COL_AgrupacionUnidadesEspaciales"
+        }
+      ]
+    },
+    {
+      "nombre": "col_puntoFuente",
+      "roles": [
+        {
+          "rol": "fuente_espacial",
+          "cardinalidad": "0..*",
+          "clase": "COL_FuenteEspacial"
+        },
+        {
+          "rol": "punto",
+          "cardinalidad": "0..*",
+          "clase": "COL_Punto"
+        }
+      ]
+    },
+    {
+      "nombre": "col_cclFuente",
+      "roles": [
+        {
+          "rol": "ccl",
+          "cardinalidad": "0..*",
+          "clase": "COL_CadenaCarasLimite"
+        },
+        {
+          "rol": "fuente_espacial",
+          "cardinalidad": "0..*",
+          "clase": "COL_FuenteEspacial"
+        }
+      ]
+    },
+    {
+      "nombre": "col_ueFuente",
+      "roles": [
+        {
+          "rol": "fuente_espacial",
+          "cardinalidad": "0..*",
+          "clase": "COL_FuenteEspacial"
+        }
+      ]
+    },
+    {
+      "nombre": "col_baunitFuente",
+      "roles": [
+        {
+          "rol": "fuente_espacial",
+          "cardinalidad": "0..*",
+          "clase": "COL_FuenteEspacial"
+        }
+      ]
+    },
+    {
+      "nombre": "col_menosCcl",
+      "roles": [
+        {
+          "rol": "ccl_menos",
+          "cardinalidad": "0..*",
+          "clase": "COL_CadenaCarasLimite"
+        }
+      ]
+    },
+    {
+      "nombre": "col_masCcl",
+      "roles": [
+        {
+          "rol": "ccl_mas",
+          "cardinalidad": "0..*",
+          "clase": "COL_CadenaCarasLimite"
+        }
+      ]
+    },
+    {
+      "nombre": "col_puntoCcl",
+      "roles": [
+        {
+          "rol": "punto",
+          "cardinalidad": "2..*",
+          "clase": "COL_Punto"
+        },
+        {
+          "rol": "ccl",
+          "cardinalidad": "0..*",
+          "clase": "COL_CadenaCarasLimite"
+        }
+      ]
+    }
+  ],
+  "estructura_intermedia": {
+    "tablas": {
+      "area_condicion_amenaza": [
+        {
+          "nombre": "identificador",
+          "tipo_sql": "varchar(50)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 50
+        },
+        {
+          "nombre": "fenomeno",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "categoria_amenaza",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "priorizacion",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "medida_intervencion",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "detalle_medida_intervencion",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "detalle_fenomeno",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_derecho",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_restriccion",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_responsabilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "area_m2",
+          "tipo_sql": "numeric(14,1)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "geometria",
+          "tipo_sql": "public.geometry(multipolygonz, 9377)",
+          "obligatorio": false,
+          "geometria": "multipolygonz",
+          "srid": 9377,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_pot",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_numero_fuente",
+          "tipo_sql": "varchar(150)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 150
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_revision",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_metadato",
+          "tipo_sql": "text",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_escala",
+          "tipo_sql": "numeric(12, 3)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_fecha_publicacion",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_responsable",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "fuente_espacial_nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        }
+      ],
+      "area_condicion_riesgo": [
+        {
+          "nombre": "identificador",
+          "tipo_sql": "varchar(50)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 50
+        },
+        {
+          "nombre": "fenomeno",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "priorizacion",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "medida_intervencion",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "detalle_medida_intervencion",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "detalle_fenomeno",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_derecho",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_restriccion",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_responsabilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "area_m2",
+          "tipo_sql": "numeric(14,1)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "geometria",
+          "tipo_sql": "public.geometry(multipolygonz, 9377)",
+          "obligatorio": false,
+          "geometria": "multipolygonz",
+          "srid": 9377,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_pot",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_numero_fuente",
+          "tipo_sql": "varchar(150)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 150
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_revision",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_metadato",
+          "tipo_sql": "text",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_escala",
+          "tipo_sql": "numeric(12, 3)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_fecha_publicacion",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_responsable",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "fuente_espacial_nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        }
+      ],
+      "areas_actividad": [
+        {
+          "nombre": "identificador",
+          "tipo_sql": "varchar(50)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 50
+        },
+        {
+          "nombre": "uso_principal",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "detalle_uso_principal",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "uso_compatible_complementario",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "uso_condicionado_restringido",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "uso_prohibido",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_derecho",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_restriccion",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_responsabilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "area_m2",
+          "tipo_sql": "numeric(14,1)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "geometria",
+          "tipo_sql": "public.geometry(multipolygonz, 9377)",
+          "obligatorio": false,
+          "geometria": "multipolygonz",
+          "srid": 9377,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_pot",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_numero_fuente",
+          "tipo_sql": "varchar(150)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 150
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_revision",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_metadato",
+          "tipo_sql": "text",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_escala",
+          "tipo_sql": "numeric(12, 3)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_fecha_publicacion",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_responsable",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "fuente_espacial_nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        }
+      ],
+      "centro_poblado_rural": [
+        {
+          "nombre": "identificador",
+          "tipo_sql": "varchar(50)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 50
+        },
+        {
+          "nombre": "nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "codigo",
+          "tipo_sql": "varchar(8)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 8
+        },
+        {
+          "nombre": "descripcion_derecho",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_restriccion",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_responsabilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "area_m2",
+          "tipo_sql": "numeric(14,1)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "geometria",
+          "tipo_sql": "public.geometry(multipolygonz, 9377)",
+          "obligatorio": false,
+          "geometria": "multipolygonz",
+          "srid": 9377,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_pot",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_numero_fuente",
+          "tipo_sql": "varchar(150)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 150
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_revision",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_metadato",
+          "tipo_sql": "text",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_escala",
+          "tipo_sql": "numeric(12, 3)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_fecha_publicacion",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_responsable",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "fuente_espacial_nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        }
+      ],
+      "clasificacion_suelo": [
+        {
+          "nombre": "identificador",
+          "tipo_sql": "varchar(50)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 50
+        },
+        {
+          "nombre": "tipo_clasificacion_suelo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_derecho",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_restriccion",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_responsabilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "area_m2",
+          "tipo_sql": "numeric(14,1)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "geometria",
+          "tipo_sql": "public.geometry(multipolygonz, 9377)",
+          "obligatorio": false,
+          "geometria": "multipolygonz",
+          "srid": 9377,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_pot",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_numero_fuente",
+          "tipo_sql": "varchar(150)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 150
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_revision",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_metadato",
+          "tipo_sql": "text",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_escala",
+          "tipo_sql": "numeric(12, 3)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_fecha_publicacion",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_responsable",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "fuente_espacial_nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        }
+      ],
+      "sistemas_generales_poligono": [
+        {
+          "nombre": "identificador",
+          "tipo_sql": "varchar(50)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 50
+        },
+        {
+          "nombre": "tipo_sistema_general",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "detalle_sistema_general",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "nivel",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "estado",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_derecho",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_restriccion",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_responsabilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "area_m2",
+          "tipo_sql": "numeric(14,1)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "geometria",
+          "tipo_sql": "public.geometry(multipolygonz, 9377)",
+          "obligatorio": false,
+          "geometria": "multipolygonz",
+          "srid": 9377,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_pot",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_numero_fuente",
+          "tipo_sql": "varchar(150)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 150
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_revision",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_metadato",
+          "tipo_sql": "text",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_escala",
+          "tipo_sql": "numeric(12, 3)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_fecha_publicacion",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_responsable",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "fuente_espacial_nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        }
+      ],
+      "sistemas_generales_linea": [
+        {
+          "nombre": "identificador",
+          "tipo_sql": "varchar(50)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 50
+        },
+        {
+          "nombre": "tipo_sistema_general",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "detalle_sistema_general",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "nivel",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "estado",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_derecho",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_restriccion",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_responsabilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "area_m2",
+          "tipo_sql": "numeric(14,1)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "geometria",
+          "tipo_sql": "public.geometry(linestringz, 9377)",
+          "obligatorio": false,
+          "geometria": "linestringz",
+          "srid": 9377,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_pot",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_numero_fuente",
+          "tipo_sql": "varchar(150)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 150
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_revision",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_metadato",
+          "tipo_sql": "text",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_escala",
+          "tipo_sql": "numeric(12, 3)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_fecha_publicacion",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_responsable",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "fuente_espacial_nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        }
+      ],
+      "sistemas_generales_punto": [
+        {
+          "nombre": "identificador",
+          "tipo_sql": "varchar(50)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 50
+        },
+        {
+          "nombre": "tipo_sistema_general",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "detalle_sistema_general",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "nivel",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "estado",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_derecho",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_restriccion",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_responsabilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "area_m2",
+          "tipo_sql": "numeric(14,1)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "geometria",
+          "tipo_sql": "public.geometry(pointz, 9377)",
+          "obligatorio": false,
+          "geometria": "pointz",
+          "srid": 9377,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_pot",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_numero_fuente",
+          "tipo_sql": "varchar(150)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 150
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_revision",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_metadato",
+          "tipo_sql": "text",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_escala",
+          "tipo_sql": "numeric(12, 3)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_fecha_publicacion",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_responsable",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "fuente_espacial_nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        }
+      ],
+      "suelo_proteccion_urbano": [
+        {
+          "nombre": "identificador",
+          "tipo_sql": "varchar(50)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 50
+        },
+        {
+          "nombre": "uso_principal",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "detalle_uso_principal",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "uso_compatible_complementario",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "uso_condicionado_restringido",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "uso_prohibido",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_derecho",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_restriccion",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_responsabilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "area_m2",
+          "tipo_sql": "numeric(14,1)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "geometria",
+          "tipo_sql": "public.geometry(multipolygonz, 9377)",
+          "obligatorio": false,
+          "geometria": "multipolygonz",
+          "srid": 9377,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_pot",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_numero_fuente",
+          "tipo_sql": "varchar(150)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 150
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_revision",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_metadato",
+          "tipo_sql": "text",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_escala",
+          "tipo_sql": "numeric(12, 3)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_fecha_publicacion",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_responsable",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "fuente_espacial_nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        }
+      ],
+      "tratamiento_urbanistico": [
+        {
+          "nombre": "identificador",
+          "tipo_sql": "varchar(50)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 50
+        },
+        {
+          "nombre": "tipo_tratamiento_urbanistico",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_derecho",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_restriccion",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_responsabilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "area_m2",
+          "tipo_sql": "numeric(14,1)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "geometria",
+          "tipo_sql": "public.geometry(multipolygonz, 9377)",
+          "obligatorio": false,
+          "geometria": "multipolygonz",
+          "srid": 9377,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_pot",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_numero_fuente",
+          "tipo_sql": "varchar(150)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 150
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_revision",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_metadato",
+          "tipo_sql": "text",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_escala",
+          "tipo_sql": "numeric(12, 3)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_fecha_publicacion",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_responsable",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "fuente_espacial_nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        }
+      ],
+      "zonificacion_amenaza": [
+        {
+          "nombre": "identificador",
+          "tipo_sql": "varchar(50)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 50
+        },
+        {
+          "nombre": "fenomeno",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "categoria_amenaza",
+          "tipo_sql": "varchar(50)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 50
+        },
+        {
+          "nombre": "descripcion",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "detalle_fenomeno",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_derecho",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_restriccion",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_responsabilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "area_m2",
+          "tipo_sql": "numeric(14,1)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "geometria",
+          "tipo_sql": "public.geometry(multipolygonz, 9377)",
+          "obligatorio": false,
+          "geometria": "multipolygonz",
+          "srid": 9377,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_pot",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_numero_fuente",
+          "tipo_sql": "varchar(150)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 150
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_revision",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_metadato",
+          "tipo_sql": "text",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_escala",
+          "tipo_sql": "numeric(12, 3)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_fecha_publicacion",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_responsable",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "fuente_espacial_nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        }
+      ],
+      "zonificacion_suelo_rural": [
+        {
+          "nombre": "identificador",
+          "tipo_sql": "varchar(50)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 50
+        },
+        {
+          "nombre": "uso_principal",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "tipo_categoria_rural",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "detalle_uso_principal",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "uso_compatible_complementario",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "uso_condicionado_restringido",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "uso_prohibido",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_derecho",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_restriccion",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "descripcion_responsabilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "area_m2",
+          "tipo_sql": "numeric(14,1)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "geometria",
+          "tipo_sql": "public.geometry(multipolygonz, 9377)",
+          "obligatorio": false,
+          "geometria": "multipolygonz",
+          "srid": 9377,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_pot",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_administrativa_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_administrativa_numero_fuente",
+          "tipo_sql": "varchar(150)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 150
+        },
+        {
+          "nombre": "fuente_administrativa_tipo_revision",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_tipo",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_estado_disponibilidad",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_metadato",
+          "tipo_sql": "text",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_escala",
+          "tipo_sql": "numeric(12, 3)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_fecha_publicacion",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        },
+        {
+          "nombre": "fuente_espacial_responsable",
+          "tipo_sql": "varchar(500)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 500
+        },
+        {
+          "nombre": "fuente_espacial_nombre",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "fuente_espacial_fecha_documento",
+          "tipo_sql": "date",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": null
+        }
+      ],
+      "municipio": [
+        {
+          "nombre": "codigo_departamento",
+          "tipo_sql": "varchar(2)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 2
+        },
+        {
+          "nombre": "codigo_municipio",
+          "tipo_sql": "varchar(3)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 3
+        },
+        {
+          "nombre": "nombre_municipio",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "tipo_interesado",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": true,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "tipo_documento",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        },
+        {
+          "nombre": "numero_documento",
+          "tipo_sql": "varchar(255)",
+          "obligatorio": false,
+          "geometria": null,
+          "srid": null,
+          "longitud": 255
+        }
+      ]
+    },
+    "srid": 9377
+  },
+  "reglas_dominio_script2": [
+    {
+      "tabla": "areas_actividad",
+      "columna": "uso_principal",
+      "tabla_dominio": "pot_areaactividadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de uso principal no se puede homologar con el dominio pot_areaactividadtipo"
+    },
+    {
+      "tabla": "areas_actividad",
+      "columna": "fuente_administrativa_tipo",
+      "tabla_dominio": "col_fuenteadministrativatipo",
+      "thisclass": "LADM_COL_v_2_0_0_Ext_POT.POT_FuenteAdministrativaTipo",
+      "mensaje_oficial": "El valor de tipo de fuente administrativa no se puede homologar con el dominio col_fuenteadministrativatipo"
+    },
+    {
+      "tabla": "areas_actividad",
+      "columna": "fuente_administrativa_tipo_pot",
+      "tabla_dominio": "pot_planordenamientoterritorialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo POT de fuente administrativa no se puede homologar con el dominio pot_planordenamientoterritorialtipo"
+    },
+    {
+      "tabla": "areas_actividad",
+      "columna": "fuente_administrativa_tipo_revision",
+      "tabla_dominio": "pot_revisiontipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de revision de la fuente administrativa no se puede homologar con el dominio pot_revisiontipo"
+    },
+    {
+      "tabla": "areas_actividad",
+      "columna": "fuente_administrativa_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente administrativa no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "areas_actividad",
+      "columna": "fuente_espacial_tipo",
+      "tabla_dominio": "col_fuenteespacialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "areas_actividad",
+      "columna": "fuente_espacial_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "tratamiento_urbanistico",
+      "columna": "tipo_tratamiento_urbanistico",
+      "tabla_dominio": "pot_tratamientourbanisticotipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de tratamiento urbanístico no se puede homologar con el dominio pot_tratamientourbanisticotipo"
+    },
+    {
+      "tabla": "tratamiento_urbanistico",
+      "columna": "fuente_administrativa_tipo",
+      "tabla_dominio": "col_fuenteadministrativatipo",
+      "thisclass": "LADM_COL_v_2_0_0_Ext_POT.POT_FuenteAdministrativaTipo",
+      "mensaje_oficial": "El valor de tipo de fuente administrativa no se puede homologar con el dominio col_fuenteadministrativatipo"
+    },
+    {
+      "tabla": "tratamiento_urbanistico",
+      "columna": "fuente_administrativa_tipo_pot",
+      "tabla_dominio": "pot_planordenamientoterritorialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo POT de fuente administrativa no se puede homologar con el dominio pot_planordenamientoterritorialtipo"
+    },
+    {
+      "tabla": "tratamiento_urbanistico",
+      "columna": "fuente_administrativa_tipo_revision",
+      "tabla_dominio": "pot_revisiontipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de revision de la fuente administrativa no se puede homologar con el dominio pot_revisiontipo"
+    },
+    {
+      "tabla": "tratamiento_urbanistico",
+      "columna": "fuente_administrativa_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente administrativa no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "tratamiento_urbanistico",
+      "columna": "fuente_espacial_tipo",
+      "tabla_dominio": "col_fuenteespacialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "tratamiento_urbanistico",
+      "columna": "fuente_espacial_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "clasificacion_suelo",
+      "columna": "tipo_clasificacion_suelo",
+      "tabla_dominio": "pot_clasificacionsuelotipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de clasificación de suelo no se puede homologar con el dominio pot_clasificacionsuelotipo"
+    },
+    {
+      "tabla": "clasificacion_suelo",
+      "columna": "fuente_administrativa_tipo",
+      "tabla_dominio": "col_fuenteadministrativatipo",
+      "thisclass": "LADM_COL_v_2_0_0_Ext_POT.POT_FuenteAdministrativaTipo",
+      "mensaje_oficial": "El valor de tipo de fuente administrativa no se puede homologar con el dominio col_fuenteadministrativatipo"
+    },
+    {
+      "tabla": "clasificacion_suelo",
+      "columna": "fuente_administrativa_tipo_pot",
+      "tabla_dominio": "pot_planordenamientoterritorialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo POT de fuente administrativa no se puede homologar con el dominio pot_planordenamientoterritorialtipo"
+    },
+    {
+      "tabla": "clasificacion_suelo",
+      "columna": "fuente_administrativa_tipo_revision",
+      "tabla_dominio": "pot_revisiontipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de revision de la fuente administrativa no se puede homologar con el dominio pot_revisiontipo"
+    },
+    {
+      "tabla": "clasificacion_suelo",
+      "columna": "fuente_administrativa_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente administrativa no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "clasificacion_suelo",
+      "columna": "fuente_espacial_tipo",
+      "tabla_dominio": "col_fuenteespacialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "clasificacion_suelo",
+      "columna": "fuente_espacial_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "zonificacion_suelo_rural",
+      "columna": "uso_principal",
+      "tabla_dominio": "pot_usosueloruraltipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de uso principal de la zonificación de suelo rural no se puede homologar con el dominio pot_usosueloruraltipo"
+    },
+    {
+      "tabla": "zonificacion_suelo_rural",
+      "columna": "tipo_categoria_rural",
+      "tabla_dominio": "pot_categoriaruraltipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de categoria rural de la zonificación de suelo rural no se puede homologar con el dominio pot_categoriaruraltipo"
+    },
+    {
+      "tabla": "zonificacion_suelo_rural",
+      "columna": "fuente_administrativa_tipo",
+      "tabla_dominio": "col_fuenteadministrativatipo",
+      "thisclass": "LADM_COL_v_2_0_0_Ext_POT.POT_FuenteAdministrativaTipo",
+      "mensaje_oficial": "El valor de tipo de fuente administrativa no se puede homologar con el dominio col_fuenteadministrativatipo"
+    },
+    {
+      "tabla": "zonificacion_suelo_rural",
+      "columna": "fuente_administrativa_tipo_pot",
+      "tabla_dominio": "pot_planordenamientoterritorialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo POT de fuente administrativa no se puede homologar con el dominio pot_planordenamientoterritorialtipo"
+    },
+    {
+      "tabla": "zonificacion_suelo_rural",
+      "columna": "fuente_administrativa_tipo_revision",
+      "tabla_dominio": "pot_revisiontipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de revision de la fuente administrativa no se puede homologar con el dominio pot_revisiontipo"
+    },
+    {
+      "tabla": "zonificacion_suelo_rural",
+      "columna": "fuente_administrativa_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente administrativa no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "zonificacion_suelo_rural",
+      "columna": "fuente_espacial_tipo",
+      "tabla_dominio": "col_fuenteespacialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "zonificacion_suelo_rural",
+      "columna": "fuente_espacial_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "sistemas_generales_poligono",
+      "columna": "tipo_sistema_general",
+      "tabla_dominio": "pot_sistemasgeneralestipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de sistema general no se puede homologar con el dominio pot_sistemasgeneralestipo"
+    },
+    {
+      "tabla": "sistemas_generales_poligono",
+      "columna": "nivel",
+      "tabla_dominio": "pot_sistemasgeneralesniveltipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de nivel del sistema general no se puede homologar con el dominio pot_sistemasgeneralestipo"
+    },
+    {
+      "tabla": "sistemas_generales_poligono",
+      "columna": "estado",
+      "tabla_dominio": "pot_sistemasgeneralesestadotipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado del sistema general no se puede homologar con el dominio pot_sistemasgeneralestipo"
+    },
+    {
+      "tabla": "sistemas_generales_poligono",
+      "columna": "fuente_administrativa_tipo",
+      "tabla_dominio": "col_fuenteadministrativatipo",
+      "thisclass": "LADM_COL_v_2_0_0_Ext_POT.POT_FuenteAdministrativaTipo",
+      "mensaje_oficial": "El valor de tipo de fuente administrativa no se puede homologar con el dominio col_fuenteadministrativatipo"
+    },
+    {
+      "tabla": "sistemas_generales_poligono",
+      "columna": "fuente_administrativa_tipo_pot",
+      "tabla_dominio": "pot_planordenamientoterritorialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo POT de fuente administrativa no se puede homologar con el dominio pot_planordenamientoterritorialtipo"
+    },
+    {
+      "tabla": "sistemas_generales_poligono",
+      "columna": "fuente_administrativa_tipo_revision",
+      "tabla_dominio": "pot_revisiontipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de revision de la fuente administrativa no se puede homologar con el dominio pot_revisiontipo"
+    },
+    {
+      "tabla": "sistemas_generales_poligono",
+      "columna": "fuente_administrativa_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente administrativa no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "sistemas_generales_poligono",
+      "columna": "fuente_espacial_tipo",
+      "tabla_dominio": "col_fuenteespacialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "sistemas_generales_poligono",
+      "columna": "fuente_espacial_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "sistemas_generales_linea",
+      "columna": "tipo_sistema_general",
+      "tabla_dominio": "pot_sistemasgeneralestipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de sistema general no se puede homologar con el dominio pot_sistemasgeneralestipo"
+    },
+    {
+      "tabla": "sistemas_generales_linea",
+      "columna": "nivel",
+      "tabla_dominio": "pot_sistemasgeneralesniveltipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de nivel del sistema general no se puede homologar con el dominio pot_sistemasgeneralestipo"
+    },
+    {
+      "tabla": "sistemas_generales_linea",
+      "columna": "estado",
+      "tabla_dominio": "pot_sistemasgeneralesestadotipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado del sistema general no se puede homologar con el dominio pot_sistemasgeneralestipo"
+    },
+    {
+      "tabla": "sistemas_generales_linea",
+      "columna": "fuente_administrativa_tipo",
+      "tabla_dominio": "col_fuenteadministrativatipo",
+      "thisclass": "LADM_COL_v_2_0_0_Ext_POT.POT_FuenteAdministrativaTipo",
+      "mensaje_oficial": "El valor de tipo de fuente administrativa no se puede homologar con el dominio col_fuenteadministrativatipo"
+    },
+    {
+      "tabla": "sistemas_generales_linea",
+      "columna": "fuente_administrativa_tipo_pot",
+      "tabla_dominio": "pot_planordenamientoterritorialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo POT de fuente administrativa no se puede homologar con el dominio pot_planordenamientoterritorialtipo"
+    },
+    {
+      "tabla": "sistemas_generales_linea",
+      "columna": "fuente_administrativa_tipo_revision",
+      "tabla_dominio": "pot_revisiontipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de revision de la fuente administrativa no se puede homologar con el dominio pot_revisiontipo"
+    },
+    {
+      "tabla": "sistemas_generales_linea",
+      "columna": "fuente_administrativa_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente administrativa no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "sistemas_generales_linea",
+      "columna": "fuente_espacial_tipo",
+      "tabla_dominio": "col_fuenteespacialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "sistemas_generales_linea",
+      "columna": "fuente_espacial_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "sistemas_generales_punto",
+      "columna": "tipo_sistema_general",
+      "tabla_dominio": "pot_sistemasgeneralestipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de sistema general no se puede homologar con el dominio pot_sistemasgeneralestipo"
+    },
+    {
+      "tabla": "sistemas_generales_punto",
+      "columna": "nivel",
+      "tabla_dominio": "pot_sistemasgeneralesniveltipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de nivel del sistema general no se puede homologar con el dominio pot_sistemasgeneralestipo"
+    },
+    {
+      "tabla": "sistemas_generales_punto",
+      "columna": "estado",
+      "tabla_dominio": "pot_sistemasgeneralesestadotipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado del sistema general no se puede homologar con el dominio pot_sistemasgeneralestipo"
+    },
+    {
+      "tabla": "sistemas_generales_punto",
+      "columna": "fuente_administrativa_tipo",
+      "tabla_dominio": "col_fuenteadministrativatipo",
+      "thisclass": "LADM_COL_v_2_0_0_Ext_POT.POT_FuenteAdministrativaTipo",
+      "mensaje_oficial": "El valor de tipo de fuente administrativa no se puede homologar con el dominio col_fuenteadministrativatipo"
+    },
+    {
+      "tabla": "sistemas_generales_punto",
+      "columna": "fuente_administrativa_tipo_pot",
+      "tabla_dominio": "pot_planordenamientoterritorialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo POT de fuente administrativa no se puede homologar con el dominio pot_planordenamientoterritorialtipo"
+    },
+    {
+      "tabla": "sistemas_generales_punto",
+      "columna": "fuente_administrativa_tipo_revision",
+      "tabla_dominio": "pot_revisiontipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de revision de la fuente administrativa no se puede homologar con el dominio pot_revisiontipo"
+    },
+    {
+      "tabla": "sistemas_generales_punto",
+      "columna": "fuente_administrativa_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente administrativa no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "sistemas_generales_punto",
+      "columna": "fuente_espacial_tipo",
+      "tabla_dominio": "col_fuenteespacialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "sistemas_generales_punto",
+      "columna": "fuente_espacial_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "centro_poblado_rural",
+      "columna": "fuente_administrativa_tipo",
+      "tabla_dominio": "col_fuenteadministrativatipo",
+      "thisclass": "LADM_COL_v_2_0_0_Ext_POT.POT_FuenteAdministrativaTipo",
+      "mensaje_oficial": "El valor de tipo de fuente administrativa no se puede homologar con el dominio col_fuenteadministrativatipo"
+    },
+    {
+      "tabla": "centro_poblado_rural",
+      "columna": "fuente_administrativa_tipo_pot",
+      "tabla_dominio": "pot_planordenamientoterritorialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo POT de fuente administrativa no se puede homologar con el dominio pot_planordenamientoterritorialtipo"
+    },
+    {
+      "tabla": "centro_poblado_rural",
+      "columna": "fuente_administrativa_tipo_revision",
+      "tabla_dominio": "pot_revisiontipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de revision de la fuente administrativa no se puede homologar con el dominio pot_revisiontipo"
+    },
+    {
+      "tabla": "centro_poblado_rural",
+      "columna": "fuente_administrativa_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente administrativa no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "centro_poblado_rural",
+      "columna": "fuente_espacial_tipo",
+      "tabla_dominio": "col_fuenteespacialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "centro_poblado_rural",
+      "columna": "fuente_espacial_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "area_condicion_riesgo",
+      "columna": "fenomeno",
+      "tabla_dominio": "pot_fenomenoamenazatipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor del tipo de fenomeno amenaza no se puede homologar con el dominio pot_fenomenoamenazatipo"
+    },
+    {
+      "tabla": "area_condicion_riesgo",
+      "columna": "priorizacion",
+      "tabla_dominio": "pot_priorizaciontipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor del tipo de priorización no se puede homologar con el dominio pot_priorizaciontipo"
+    },
+    {
+      "tabla": "area_condicion_riesgo",
+      "columna": "medida_intervencion",
+      "tabla_dominio": "pot_medidaintervenciontipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor del tipo de medida de intervensión no se puede homologar con el dominio pot_medidaintervenciontipo"
+    },
+    {
+      "tabla": "area_condicion_riesgo",
+      "columna": "fuente_administrativa_tipo",
+      "tabla_dominio": "col_fuenteadministrativatipo",
+      "thisclass": "LADM_COL_v_2_0_0_Ext_POT.POT_FuenteAdministrativaTipo",
+      "mensaje_oficial": "El valor de tipo de fuente administrativa no se puede homologar con el dominio col_fuenteadministrativatipo"
+    },
+    {
+      "tabla": "area_condicion_riesgo",
+      "columna": "fuente_administrativa_tipo_pot",
+      "tabla_dominio": "pot_planordenamientoterritorialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo POT de fuente administrativa no se puede homologar con el dominio pot_planordenamientoterritorialtipo"
+    },
+    {
+      "tabla": "area_condicion_riesgo",
+      "columna": "fuente_administrativa_tipo_revision",
+      "tabla_dominio": "pot_revisiontipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de revision de la fuente administrativa no se puede homologar con el dominio pot_revisiontipo"
+    },
+    {
+      "tabla": "area_condicion_riesgo",
+      "columna": "fuente_administrativa_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente administrativa no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "area_condicion_riesgo",
+      "columna": "fuente_espacial_tipo",
+      "tabla_dominio": "col_fuenteespacialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "area_condicion_riesgo",
+      "columna": "fuente_espacial_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "area_condicion_amenaza",
+      "columna": "fenomeno",
+      "tabla_dominio": "pot_fenomenoamenazatipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor del tipo de fenomeno amenaza no se puede homologar con el dominio pot_fenomenoamenazatipo"
+    },
+    {
+      "tabla": "area_condicion_amenaza",
+      "columna": "categoria_amenaza",
+      "tabla_dominio": "pot_categoriaamenazatipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor del tipo de categoría amenaza no se puede homologar con el dominio pot_categoriaamenazatipo"
+    },
+    {
+      "tabla": "area_condicion_amenaza",
+      "columna": "priorizacion",
+      "tabla_dominio": "pot_priorizaciontipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor del tipo de priorización no se puede homologar con el dominio pot_priorizaciontipo"
+    },
+    {
+      "tabla": "area_condicion_amenaza",
+      "columna": "medida_intervencion",
+      "tabla_dominio": "pot_medidaintervenciontipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor del tipo de medida de intervensión no se puede homologar con el dominio pot_medidaintervenciontipo"
+    },
+    {
+      "tabla": "area_condicion_amenaza",
+      "columna": "fuente_administrativa_tipo",
+      "tabla_dominio": "col_fuenteadministrativatipo",
+      "thisclass": "LADM_COL_v_2_0_0_Ext_POT.POT_FuenteAdministrativaTipo",
+      "mensaje_oficial": "El valor de tipo de fuente administrativa no se puede homologar con el dominio col_fuenteadministrativatipo"
+    },
+    {
+      "tabla": "area_condicion_amenaza",
+      "columna": "fuente_administrativa_tipo_pot",
+      "tabla_dominio": "pot_planordenamientoterritorialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo POT de fuente administrativa no se puede homologar con el dominio pot_planordenamientoterritorialtipo"
+    },
+    {
+      "tabla": "area_condicion_amenaza",
+      "columna": "fuente_administrativa_tipo_revision",
+      "tabla_dominio": "pot_revisiontipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de revision de la fuente administrativa no se puede homologar con el dominio pot_revisiontipo"
+    },
+    {
+      "tabla": "area_condicion_amenaza",
+      "columna": "fuente_administrativa_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente administrativa no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "area_condicion_amenaza",
+      "columna": "fuente_espacial_tipo",
+      "tabla_dominio": "col_fuenteespacialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "area_condicion_amenaza",
+      "columna": "fuente_espacial_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "zonificacion_amenaza",
+      "columna": "fenomeno",
+      "tabla_dominio": "pot_fenomenoamenazatipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor del tipo de fenomeno amenaza no se puede homologar con el dominio pot_fenomenoamenazatipo"
+    },
+    {
+      "tabla": "zonificacion_amenaza",
+      "columna": "categoria_amenaza",
+      "tabla_dominio": "pot_categoriaamenazatipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor del tipo de categoría amenaza no se puede homologar con el dominio pot_categoriaamenazatipo"
+    },
+    {
+      "tabla": "zonificacion_amenaza",
+      "columna": "fuente_administrativa_tipo",
+      "tabla_dominio": "col_fuenteadministrativatipo",
+      "thisclass": "LADM_COL_v_2_0_0_Ext_POT.POT_FuenteAdministrativaTipo",
+      "mensaje_oficial": "El valor de tipo de fuente administrativa no se puede homologar con el dominio col_fuenteadministrativatipo"
+    },
+    {
+      "tabla": "zonificacion_amenaza",
+      "columna": "fuente_administrativa_tipo_pot",
+      "tabla_dominio": "pot_planordenamientoterritorialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo POT de fuente administrativa no se puede homologar con el dominio pot_planordenamientoterritorialtipo"
+    },
+    {
+      "tabla": "zonificacion_amenaza",
+      "columna": "fuente_administrativa_tipo_revision",
+      "tabla_dominio": "pot_revisiontipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de revision de la fuente administrativa no se puede homologar con el dominio pot_revisiontipo"
+    },
+    {
+      "tabla": "zonificacion_amenaza",
+      "columna": "fuente_administrativa_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente administrativa no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "zonificacion_amenaza",
+      "columna": "fuente_espacial_tipo",
+      "tabla_dominio": "col_fuenteespacialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "zonificacion_amenaza",
+      "columna": "fuente_espacial_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "suelo_proteccion_urbano",
+      "columna": "uso_principal",
+      "tabla_dominio": "pot_sueloproteccionurbanotipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de uso principal no se puede homologar con el dominio pot_areaactividadtipo"
+    },
+    {
+      "tabla": "suelo_proteccion_urbano",
+      "columna": "fuente_administrativa_tipo",
+      "tabla_dominio": "col_fuenteadministrativatipo",
+      "thisclass": "LADM_COL_v_2_0_0_Ext_POT.POT_FuenteAdministrativaTipo",
+      "mensaje_oficial": "El valor de tipo de fuente administrativa no se puede homologar con el dominio col_fuenteadministrativatipo"
+    },
+    {
+      "tabla": "suelo_proteccion_urbano",
+      "columna": "fuente_administrativa_tipo_pot",
+      "tabla_dominio": "pot_planordenamientoterritorialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo POT de fuente administrativa no se puede homologar con el dominio pot_planordenamientoterritorialtipo"
+    },
+    {
+      "tabla": "suelo_proteccion_urbano",
+      "columna": "fuente_administrativa_tipo_revision",
+      "tabla_dominio": "pot_revisiontipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de revision de la fuente administrativa no se puede homologar con el dominio pot_revisiontipo"
+    },
+    {
+      "tabla": "suelo_proteccion_urbano",
+      "columna": "fuente_administrativa_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente administrativa no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "suelo_proteccion_urbano",
+      "columna": "fuente_espacial_tipo",
+      "tabla_dominio": "col_fuenteespacialtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "suelo_proteccion_urbano",
+      "columna": "fuente_espacial_estado_disponibilidad",
+      "tabla_dominio": "col_estadodisponibilidadtipo",
+      "thisclass": null,
+      "mensaje_oficial": "El valor de tipo de estado de disponibilidad de la fuente espacial no se puede homologar con el dominio col_estadodisponibilidadtipo"
+    },
+    {
+      "tabla": "municipio",
+      "columna": "tipo_interesado",
+      "tabla_dominio": "col_interesadotipo",
+      "thisclass": null,
+      "mensaje_oficial": "Valor de tipo_interesado no homologable con col_interesadotipo (derivado del ETL oficial)"
+    },
+    {
+      "tabla": "municipio",
+      "columna": "tipo_documento",
+      "tabla_dominio": "col_documentotipo",
+      "thisclass": null,
+      "mensaje_oficial": "Valor de tipo_documento no homologable con col_documentotipo (derivado del ETL oficial)"
+    }
+  ],
+  "tablas_esperadas_por_etl": [
+    "col_documentotipo",
+    "col_estadodisponibilidadtipo",
+    "col_fuenteadministrativatipo",
+    "col_fuenteespacialtipo",
+    "col_interesadotipo",
+    "col_relacionsuperficietipo",
+    "col_rrrfuente",
+    "col_uebaunit",
+    "col_uefuente",
+    "col_unidadadministrativabasicatipo",
+    "pot_areaactividadtipo",
+    "pot_categoriaamenazatipo",
+    "pot_categoriaruraltipo",
+    "pot_clasificacionsuelotipo",
+    "pot_derecho",
+    "pot_fenomenoamenazatipo",
+    "pot_fuenteadministrativa",
+    "pot_fuenteespacial",
+    "pot_medidaintervenciontipo",
+    "pot_municipio",
+    "pot_planordenamientoterritorialtipo",
+    "pot_priorizaciontipo",
+    "pot_referencialineasistemasgenerales",
+    "pot_referenciapuntosistemasgenerales",
+    "pot_responsabilidad",
+    "pot_restriccion",
+    "pot_revisiontipo",
+    "pot_sistemasgeneralesestadotipo",
+    "pot_sistemasgeneralesniveltipo",
+    "pot_sistemasgeneralestipo",
+    "pot_sueloproteccionurbanotipo",
+    "pot_tratamientourbanisticotipo",
+    "pot_uab_areacondicionamenaza",
+    "pot_uab_areacondicionriesgo",
+    "pot_uab_areasactividad",
+    "pot_uab_centropobladorural",
+    "pot_uab_clasificacionsuelo",
+    "pot_uab_sistemasgenerales",
+    "pot_uab_sueloproteccionurbano",
+    "pot_uab_tratamientourbanistico",
+    "pot_uab_zonificacionamenaza",
+    "pot_uab_zonificacionsuelorural",
+    "pot_ue_areacondicionamenaza",
+    "pot_ue_areacondicionriesgo",
+    "pot_ue_areasactividad",
+    "pot_ue_centropobladorural",
+    "pot_ue_clasificacionsuelo",
+    "pot_ue_sistemasgenerales",
+    "pot_ue_sueloproteccionurbano",
+    "pot_ue_tratamientourbanistico",
+    "pot_ue_zonificacionamenaza",
+    "pot_ue_zonificacionsuelorural",
+    "pot_usocompatiblecomplementariovalor",
+    "pot_usocondicionadorestringidovalor",
+    "pot_usoprohibidovalor",
+    "pot_usosueloruraltipo",
+    "t_ili2db_basket"
+  ]
+}

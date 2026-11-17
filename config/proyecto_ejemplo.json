@@ -1,0 +1,31 @@
+{
+  "_nota": "Metadatos del proyecto. Los valores de dominio deben escribirse con el código oficial (ilicode). Lo que se deje en null queda PENDIENTE y se reporta; el toolkit no rellena valores por su cuenta.",
+  "municipio": {
+    "codigo_departamento": "05",
+    "codigo_municipio": "134",
+    "nombre_municipio": "CAMPAMENTO",
+    "departamento": "ANTIOQUIA",
+    "tipo_interesado": "Persona_Juridica",
+    "tipo_documento": "NIT",
+    "numero_documento": null
+  },
+  "fuente_administrativa": {
+    "fuente_administrativa_tipo": "Documento_Publico.Acuerdo",
+    "fuente_administrativa_tipo_pot": "EOT",
+    "fuente_administrativa_estado_disponibilidad": "Disponible",
+    "fuente_administrativa_fecha_documento": null,
+    "fuente_administrativa_numero_fuente": null,
+    "fuente_administrativa_tipo_revision": "Revision_Vencimiento_Largo_Plazo"
+  },
+  "fuente_espacial": {
+    "fuente_espacial_tipo": null,
+    "fuente_espacial_estado_disponibilidad": "Disponible",
+    "fuente_espacial_metadato": null,
+    "fuente_espacial_escala": null,
+    "fuente_espacial_fecha_publicacion": null,
+    "fuente_espacial_responsable": null,
+    "fuente_espacial_nombre": null,
+    "fuente_espacial_fecha_documento": null
+  },
+  "_aviso_codigo_dane": "Verifique el código DIVIPOLA en la fuente oficial del DANE antes de usarlo."
+}

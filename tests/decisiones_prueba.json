@@ -1,0 +1,28 @@
+{
+  "_nota": "Decisiones SIMULADAS para la prueba (equivalen a la revisión de un profesional SIG).",
+  "capas": {
+    "CLASIFICACION_SUELO.shp::": {"destino": "clasificacion_suelo"},
+    "SUELO_MUNICIPAL_FINAL.gpkg::suelo_municipal": {"destino": "excluir"},
+    "centros_poblados.shp::": {"destino": "centro_poblado_rural"},
+    "equipamientos_coordenadas.csv::": {"destino": "sistemas_generales_punto", "crs_origen": "EPSG:3116"},
+    "tratamientos_urb.shp::": {"destino": "tratamiento_urbanistico", "crs_origen": "EPSG:9377"},
+    "red_vial.dxf::entities": {"destino": "sistemas_generales_linea", "crs_origen": "EPSG:9377"}
+  },
+  "campos": {
+    "red_vial.dxf::entities": {"tipo_sistema_general": "Layer"}
+  },
+  "valores": {
+    "areas_actividad.uso_principal": {"Zona verde": "Otro"},
+    "zonificacion_suelo_rural.tipo_categoria_rural": {"Ganadería extensiva": "Suelo_Rural_Productivo.Agropecuario"},
+    "sistemas_generales_linea.tipo_sistema_general": {
+      "VIA_SEGUNDO_ORDEN": "Vias.Rural.Vias_Segundo_Orden",
+      "VIA_TERCER_ORDEN": "Vias.Rural.Vias_Tercer_Orden"
+    }
+  },
+  "constantes": {
+    "AMENAZA_MOV_MASA.shp::": {"fenomeno": "Movimientos_En_Masa"},
+    "red_vial.dxf::entities": {"nivel": "Municipal", "estado": "Existente", "detalle_sistema_general": "Red vial rural (prueba)",
+                               "descripcion_restriccion": "Faja de retiro vial (prueba)"},
+    "centros_poblados.shp::": {"descripcion_restriccion": "Norma de centro poblado (prueba)"}
+  }
+}

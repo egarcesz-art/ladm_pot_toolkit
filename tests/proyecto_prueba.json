@@ -1,0 +1,30 @@
+{
+  "_nota": "Proyecto SINTÉTICO de prueba (no corresponde a un municipio real).",
+  "municipio": {
+    "codigo_departamento": "99",
+    "codigo_municipio": "999",
+    "nombre_municipio": "MUNICIPIO SINTETICO",
+    "departamento": "PRUEBA",
+    "tipo_interesado": "Persona_Juridica",
+    "tipo_documento": "NIT",
+    "numero_documento": "000000000-0"
+  },
+  "fuente_administrativa": {
+    "fuente_administrativa_tipo": "Documento_Publico.Acuerdo",
+    "fuente_administrativa_tipo_pot": "EOT",
+    "fuente_administrativa_estado_disponibilidad": "Disponible",
+    "fuente_administrativa_fecha_documento": "2026-10-01",
+    "fuente_administrativa_numero_fuente": "Acuerdo 000 de 2026 (prueba)",
+    "fuente_administrativa_tipo_revision": "Revision_Vencimiento_Largo_Plazo"
+  },
+  "fuente_espacial": {
+    "fuente_espacial_tipo": null,
+    "fuente_espacial_estado_disponibilidad": "Disponible",
+    "fuente_espacial_metadato": null,
+    "fuente_espacial_escala": 25000,
+    "fuente_espacial_fecha_publicacion": null,
+    "fuente_espacial_responsable": "Equipo SIG (prueba)",
+    "fuente_espacial_nombre": null,
+    "fuente_espacial_fecha_documento": "2026-10-01"
+  }
+}

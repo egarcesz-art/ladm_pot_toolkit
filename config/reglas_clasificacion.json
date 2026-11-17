@@ -1,0 +1,88 @@
+{
+  "_nota": "Reglas HEURÍSTICAS del toolkit (no forman parte del modelo oficial). Sirven para proponer la tabla destino de la estructura intermedia oficial y los campos de origen. Editables. Los destinos válidos se toman del script oficial 1_create_intermediate_structure.sql; un destino aquí que no exista allá se ignora.",
+  "umbral_confianza_alta": 0.55,
+  "umbral_confianza_media": 0.35,
+  "aplicar_coincidencia_por_tokens": false,
+  "destinos": {
+    "clasificacion_suelo": {
+      "palabras_clave": ["CLASIFICACION", "CLASE_SUELO", "CLASE", "SUELO_URBANO_RURAL", "CLAS_SUELO", "SUELO_MUNICIPAL", "PERIMETRO"],
+      "geometria": "poligono"
+    },
+    "zonificacion_suelo_rural": {
+      "palabras_clave": ["ZONIFICACION_RURAL", "SUELO_RURAL", "CATEGORIA_RURAL", "CATEGORIAS_RURALES", "USOS_RURAL", "USO_RURAL", "COMPONENTE_RURAL", "ZONIF_RURAL", "PROTECCION_RURAL", "DESARROLLO_RESTRINGIDO"],
+      "geometria": "poligono"
+    },
+    "areas_actividad": {
+      "palabras_clave": ["AREAS_ACTIVIDAD", "AREA_ACTIVIDAD", "USOS_URBANOS", "USO_URBANO", "USOS_SUELO_URBANO", "ACTIVIDAD"],
+      "geometria": "poligono"
+    },
+    "tratamiento_urbanistico": {
+      "palabras_clave": ["TRATAMIENTO", "TRATAMIENTOS", "TRAT_URB"],
+      "geometria": "poligono"
+    },
+    "suelo_proteccion_urbano": {
+      "palabras_clave": ["PROTECCION_URBANO", "SUELO_PROTECCION_URBANO", "PROTECCION_URB"],
+      "geometria": "poligono"
+    },
+    "centro_poblado_rural": {
+      "palabras_clave": ["CENTRO_POBLADO", "CENTROS_POBLADOS", "CP_RURAL", "CORREGIMIENTO"],
+      "geometria": "poligono"
+    },
+    "zonificacion_amenaza": {
+      "palabras_clave": ["AMENAZA", "ZONIFICACION_AMENAZA", "AMENAZAS", "MOV_MASA", "MOVIMIENTOS_MASA", "INUNDACION", "AVENIDA_TORRENCIAL"],
+      "geometria": "poligono"
+    },
+    "area_condicion_amenaza": {
+      "palabras_clave": ["CONDICION_AMENAZA", "COND_AMENAZA", "AREAS_CONDICION_AMENAZA"],
+      "geometria": "poligono"
+    },
+    "area_condicion_riesgo": {
+      "palabras_clave": ["CONDICION_RIESGO", "COND_RIESGO", "AREAS_CONDICION_RIESGO", "RIESGO"],
+      "geometria": "poligono"
+    },
+    "sistemas_generales_poligono": {
+      "palabras_clave": ["EQUIPAMIENTO", "EQUIPAMIENTOS", "ESPACIO_PUBLICO", "SISTEMAS_GENERALES", "SISTEMA_ESTRUCTURANTE", "PARQUES", "SERVICIOS_PUBLICOS"],
+      "geometria": "poligono"
+    },
+    "sistemas_generales_linea": {
+      "palabras_clave": ["VIAS", "VIA", "RED_VIAL", "VIAL", "MOVILIDAD", "SISTEMAS_GENERALES", "ACUEDUCTO", "ALCANTARILLADO", "REDES"],
+      "geometria": "linea"
+    },
+    "sistemas_generales_punto": {
+      "palabras_clave": ["EQUIPAMIENTO", "EQUIPAMIENTOS", "SISTEMAS_GENERALES", "PTAP", "PTAR", "BOCATOMA", "TANQUE"],
+      "geometria": "punto"
+    },
+    "_limite_municipal": {
+      "palabras_clave": ["LIMITE", "LIMITE_MUNICIPAL", "MUNICIPIO", "MPIO", "LIM_MUN", "JURISDICCION"],
+      "geometria": "poligono",
+      "_nota": "Destino auxiliar del toolkit (no es tabla del modelo): se usa para validaciones de extensión."
+    }
+  },
+  "sinonimos_campos": {
+    "tipo_clasificacion_suelo": ["CLASE", "CLASE_SUELO", "CLASIFICACION", "TIPO_SUELO", "CLAS_SUELO", "SUELO", "TIPO"],
+    "uso_principal": ["USO_PRINCIPAL", "USO_PPAL", "USO", "USO_PRIN", "USOPPAL", "ACTIVIDAD"],
+    "detalle_uso_principal": ["DETALLE_USO", "DETALLE_USO_PRINCIPAL", "NOMBRE_ZONA", "ZONA", "DESCRIPCION_USO"],
+    "tipo_categoria_rural": ["CATEGORIA", "CATEGORIA_RURAL", "CAT_RURAL", "TIPO_CATEGORIA"],
+    "uso_compatible_complementario": ["USO_COMPATIBLE", "USO_COMPLEMENTARIO", "USOS_COMPATIBLES", "COMPATIBLE", "COMPLEMENTARIO", "USO_COMP"],
+    "uso_condicionado_restringido": ["USO_CONDICIONADO", "USO_RESTRINGIDO", "USOS_CONDICIONADOS", "CONDICIONADO", "RESTRINGIDO", "USO_COND"],
+    "uso_prohibido": ["USO_PROHIBIDO", "USOS_PROHIBIDOS", "PROHIBIDO", "USO_PROH"],
+    "tipo_tratamiento_urbanistico": ["TRATAMIENTO", "TIPO_TRATAMIENTO", "TRAT", "TIPO_TRAT"],
+    "fenomeno": ["FENOMENO", "TIPO_AMENAZA", "EVENTO", "PROCESO"],
+    "categoria_amenaza": ["CATEGORIA", "CATEGORIA_AMENAZA", "NIVEL_AMENAZA", "AMENAZA", "GRADO", "CAT_AMENAZA"],
+    "priorizacion": ["PRIORIZACION", "PRIORIDAD", "PLAZO"],
+    "medida_intervencion": ["MEDIDA", "MEDIDA_INTERVENCION", "INTERVENCION"],
+    "tipo_sistema_general": ["TIPO_SISTEMA", "TIPO", "SISTEMA", "CATEGORIA", "TIPO_EQUIPAMIENTO", "TIPO_VIA", "JERARQUIA", "CLASE_VIA"],
+    "detalle_sistema_general": ["DETALLE", "DESCRIPCION", "NOMBRE"],
+    "nivel": ["NIVEL", "ESCALA_SERVICIO", "COBERTURA", "AMBITO"],
+    "estado": ["ESTADO", "CONDICION", "SITUACION"],
+    "nombre": ["NOMBRE", "NOM", "NAME", "NOMBRE_ZONA", "NOM_CP"],
+    "codigo": ["CODIGO", "COD", "COD_DANE", "CODIGO_DANE", "COD_CP", "CPOB_CCDGO"],
+    "descripcion": ["DESCRIPCION", "DESCRIP", "OBSERVACION"],
+    "detalle_fenomeno": ["DETALLE_FENOMENO", "DESCRIPCION_FENOMENO"],
+    "detalle_medida_intervencion": ["DETALLE_MEDIDA", "DESCRIPCION_MEDIDA"],
+    "identificador": ["IDENTIFICADOR", "ID_POT", "COD_ID"],
+    "descripcion_derecho": ["DERECHO", "DESCRIPCION_DERECHO"],
+    "descripcion_restriccion": ["RESTRICCION", "DESCRIPCION_RESTRICCION", "NORMA"],
+    "descripcion_responsabilidad": ["RESPONSABILIDAD", "DESCRIPCION_RESPONSABILIDAD"]
+  }
+}
